@@ -1,4 +1,7 @@
 package vn.fpt.orderfood.service;
 
-public class FoodService {
+import androidx.room.Dao;
+
+@Dao
+public interface FoodService {
 }

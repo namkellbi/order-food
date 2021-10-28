@@ -1,7 +1,15 @@
 package vn.fpt.orderfood.entity;
 
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity
 public class Table {
+    @PrimaryKey
     private int tableId;
+
+    @ColumnInfo
     private int status;
 
     public Table(){}

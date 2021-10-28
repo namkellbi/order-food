@@ -1,4 +1,7 @@
 package vn.fpt.orderfood.service;
 
-public class RoleService {
+import androidx.room.Dao;
+
+@Dao
+public interface RoleService {
 }

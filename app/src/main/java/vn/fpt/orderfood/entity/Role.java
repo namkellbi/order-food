@@ -1,8 +1,18 @@
 package vn.fpt.orderfood.entity;
 
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity
 public class Role {
+    @PrimaryKey
     private int roleId;
+
+    @ColumnInfo
     private String roleName;
+
+    @ColumnInfo
     private String roleDescription;
 
     public Role(){}

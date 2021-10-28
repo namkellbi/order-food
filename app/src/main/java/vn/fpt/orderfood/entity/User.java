@@ -1,13 +1,33 @@
 package vn.fpt.orderfood.entity;
 
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity
 public class User {
+    @PrimaryKey
     private int userId;
+
+    @ColumnInfo
     private String userName;
+
+    @ColumnInfo
     private String password;
+
+    @ColumnInfo
     private String phoneNumber;
+
+    @ColumnInfo
     private String email;
+
+    @ColumnInfo
     private String address;
+
+    @ColumnInfo
     private int status;
+
+    @ColumnInfo
     private int roleId;
 
     public User(){}

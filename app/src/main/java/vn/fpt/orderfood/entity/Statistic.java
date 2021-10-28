@@ -1,8 +1,18 @@
 package vn.fpt.orderfood.entity;
 
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity
 public class Statistic {
+    @PrimaryKey
     private int statisticId;
+
+    @ColumnInfo
     private String date;
+
+    @ColumnInfo
     private double netIncome;
 
     public Statistic(){}

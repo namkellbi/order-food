@@ -1,7 +1,15 @@
 package vn.fpt.orderfood.entity;
 
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity
 public class Category {
+    @PrimaryKey
     private int categoryId;
+
+    @ColumnInfo
     private String categoryName;
 
     public Category(){}

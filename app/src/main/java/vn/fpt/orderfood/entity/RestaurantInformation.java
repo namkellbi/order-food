@@ -1,11 +1,27 @@
 package vn.fpt.orderfood.entity;
 
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity
 public class RestaurantInformation {
+    @PrimaryKey
     private int id;
+
+    @ColumnInfo
     private String name;
+
+    @ColumnInfo
     private String phoneNumber;
+
+    @ColumnInfo
     private String address;
+
+    @ColumnInfo
     private String email;
+
+    @ColumnInfo
     private String description;
 
     public RestaurantInformation(){}

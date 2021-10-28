@@ -1,9 +1,21 @@
 package vn.fpt.orderfood.entity;
 
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity
 public class BillDetail {
+    @PrimaryKey
     private int billId;
+
+    @ColumnInfo
     private int foodId;
+
+    @ColumnInfo
     private int quantity;
+
+    @ColumnInfo
     private double price;
 
     public BillDetail(){}

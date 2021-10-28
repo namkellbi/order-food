@@ -1,11 +1,27 @@
 package vn.fpt.orderfood.entity;
 
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity
 public class Bill {
+    @PrimaryKey
     private int billId;
+
+    @ColumnInfo
     private String dateCreated;
+
+    @ColumnInfo
     private double totalPrice;
+
+    @ColumnInfo
     private int tableId;
+
+    @ColumnInfo
     private int status;
+
+    @ColumnInfo
     private int userId;
 
     public Bill(){}
