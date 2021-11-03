@@ -22,7 +22,7 @@ import vn.fpt.orderfood.service.TableService;
 import vn.fpt.orderfood.service.UserService;
 
 @Database(entities = {User.class, Bill.class, BillDetail.class, Category.class, Food.class,
-            RestaurantInformation.class, Role.class, Statistic.class, Table.class,User.class},  version = 1)
+            RestaurantInformation.class, Role.class, Statistic.class, Table.class},  version = 1)
 
 public abstract class AppDatabase extends RoomDatabase {
 
