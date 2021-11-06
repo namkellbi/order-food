@@ -9,8 +9,8 @@ import vn.fpt.orderfood.config.AppDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
-    AppDatabase db = Room.databaseBuilder(getApplicationContext(),
-            AppDatabase.class, "information").allowMainThreadQueries().build();
+//    AppDatabase db = Room.databaseBuilder(getApplicationContext(),
+//            AppDatabase.class, "information").allowMainThreadQueries().build();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

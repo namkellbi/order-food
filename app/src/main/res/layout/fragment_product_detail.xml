@@ -41,7 +41,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dimen_10dp">
+                android:layout_marginTop="10dp">
 
                 <androidx.viewpager.widget.ViewPager
                     android:id="@+id/viewPager"
@@ -87,7 +87,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="@dimen/dimen_5dp"
+                android:layout_margin="5dp"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -196,7 +196,7 @@
                     android:id="@+id/lytTimer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/dimen_10dp"
+                    android:layout_margin="10dp"
                     android:visibility="gone"
                     android:weightSum="2">
 
@@ -352,7 +352,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/viewPrice"
-                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:layout_marginTop="5dp"
                         android:orientation="horizontal"
                         android:weightSum="2">
 
@@ -600,8 +600,8 @@
                 android:id="@+id/lytReview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dimen_5dp"
-                android:padding="@dimen/dimen_5dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
                 android:visibility="gone">
 
                 <View
@@ -615,7 +615,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/viewReview"
-                    android:layout_marginTop="@dimen/dimen_10dp">
+                    android:layout_marginTop="10dp">
 
                     <TextView
                         android:id="@+id/tvTitleReview"
@@ -696,7 +696,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/lytReviewTitle"
-                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:layout_marginTop="5dp"
                     android:background="@color/bg_color"
                     android:nestedScrollingEnabled="false" />
             </RelativeLayout>
@@ -705,8 +705,8 @@
                 android:id="@+id/relativeLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dimen_5dp"
-                android:padding="@dimen/dimen_5dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
                 android:visibility="visible">
 
                 <View
@@ -720,7 +720,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/viewSimilar"
-                    android:layout_marginTop="@dimen/dimen_10dp">
+                    android:layout_marginTop="10dp">
 
                     <TextView
                         android:id="@+id/title"
@@ -757,7 +757,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/titleLyt1"
-                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:layout_marginTop="5dp"
                     android:background="@color/bg_color"
                     android:nestedScrollingEnabled="false"
                     shimmer:ignore="TooManyViews" />
@@ -791,13 +791,13 @@
     <Button
         android:id="@+id/btnCart"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dimen_50dp"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:background="@color/colorPrimary"
         android:text="@string/go_to_cart"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="@dimen/dimen_18dp"
+        android:textSize="18dp"
         android:textStyle="bold" />
 
 </RelativeLayout>
