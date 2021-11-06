@@ -64,7 +64,7 @@
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dimen_1dp"
+        android:layout_height="1dp"
         android:layout_below="@+id/lyt_tx"
         android:layout_marginTop="@dimen/_5sdp"
         android:layout_marginBottom="@dimen/_5sdp"
@@ -75,7 +75,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/lyt_tx"
-        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="@dimen/_3sdp">
 
         <LinearLayout

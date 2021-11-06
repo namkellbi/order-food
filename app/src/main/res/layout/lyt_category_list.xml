@@ -25,7 +25,7 @@
             android:id="@+id/imgCategory"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:maxWidth="@dimen/dimen_80dp"
+            android:maxWidth="80dp"
             android:scaleType="fitXY"
             android:contentDescription="@string/app_name" />
 
@@ -39,8 +39,8 @@
         android:ellipsize="end"
         android:gravity="center"
         android:lines="1"
-        android:paddingStart="@dimen/dimen_5dp"
-        android:paddingEnd="@dimen/dimen_5dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:textColor="@color/black"
         android:textSize="@dimen/_10ssp" />
 </LinearLayout>

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/card_shadow"
-    android:padding="@dimen/dimen_10dp">
+    android:padding="10dp">
 
     <TextView
         android:id="@+id/tvStatus"
@@ -27,7 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvStatus"
-        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginBottom="10dp"
         android:textAlignment="viewStart"
         android:textStyle="bold" />
 
@@ -43,7 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvItemName"
-        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginStart="10dp"
         android:layout_toEndOf="@id/tvQty"
         android:textAlignment="viewStart" />
 
@@ -61,7 +61,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvPrice"
-        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:layout_marginEnd="10dp"
         android:layout_toEndOf="@id/tvTaxTitle"
         android:textAlignment="viewStart" />
 
