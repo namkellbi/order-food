@@ -53,10 +53,10 @@ public class CategoryFragment extends Fragment {
                              Bundle savedInstanceState) {
         root = inflater.inflate(R.layout.fragment_category, container, false);
         mShimmerViewContainer = root.findViewById(R.id.mShimmerViewContainer);
-        db = Room.databaseBuilder(activity.getApplicationContext(),
-                AppDatabase.class, "category").allowMainThreadQueries().build();
-        activity = getActivity();
 
+        activity = getActivity();
+        db = Room.databaseBuilder(activity.getApplicationContext(),
+                AppDatabase.class, "foodOrder").allowMainThreadQueries().build();
         setHasOptionsMenu(true);
 
 
@@ -75,7 +75,7 @@ public class CategoryFragment extends Fragment {
                 mShimmerViewContainer.setVisibility(View.VISIBLE);
                 mShimmerViewContainer.startShimmer();
                 //ApiConfig.getWalletBalance(activity, new Session(activity));
-                GetCategory();
+                GetCategory(db);
             //}
         });
 
@@ -84,14 +84,14 @@ public class CategoryFragment extends Fragment {
             mShimmerViewContainer.setVisibility(View.VISIBLE);
             mShimmerViewContainer.startShimmer();
             //ApiConfig.getWalletBalance(activity, new Session(activity));
-            GetCategory();
+            GetCategory(db);
         //}
 
         return root;
     }
 
 
-    void GetCategory() {
+    void GetCategory(AppDatabase db) {
         categoryArrayList = new ArrayList<>();
         CategoryService categoryService = db.categoryService();
         List<Category> categories = categoryService.getAll();
@@ -134,9 +134,9 @@ public class CategoryFragment extends Fragment {
     @Override
     public void onPrepareOptionsMenu(@NonNull Menu menu) {
         super.onPrepareOptionsMenu(menu);
-        menu.findItem(R.id.toolbar_layout).setVisible(false);
-        menu.findItem(R.id.toolbar_cart).setVisible(true);
-        menu.findItem(R.id.toolbar_sort).setVisible(false);
-        menu.findItem(R.id.toolbar_search).setVisible(true);
+//        menu.findItem(R.id.toolbar_layout).setVisible(false);
+//        menu.findItem(R.id.toolbar_cart).setVisible(true);
+//        menu.findItem(R.id.toolbar_sort).setVisible(false);
+//        menu.findItem(R.id.toolbar_search).setVisible(true);
     }
 }

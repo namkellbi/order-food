@@ -9,6 +9,6 @@ import vn.fpt.orderfood.entity.Category;
 
 @Dao
 public interface CategoryService {
-    @Query("SELECT * FROM category")
+    @Query("SELECT * FROM Category")
     List<Category> getAll();
 }
