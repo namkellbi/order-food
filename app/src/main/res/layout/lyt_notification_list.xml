@@ -15,7 +15,7 @@
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="5dp"
         android:contentDescription="@string/app_name"
-        android:padding="@dimen/dimen_2dp" />
+        android:padding="2dp" />
 
     <TextView
         android:id="@+id/tvTitle"
@@ -35,7 +35,7 @@
         android:layout_below="@+id/tvTitle"
         android:paddingStart="@dimen/_10sdp"
         android:paddingEnd="@dimen/_10sdp"
-        android:paddingBottom="@dimen/dimen_5dp"
+        android:paddingBottom="5dp"
         android:textAlignment="viewStart" />
 
 </RelativeLayout>

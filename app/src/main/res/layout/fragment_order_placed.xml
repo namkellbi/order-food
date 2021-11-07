@@ -20,7 +20,7 @@
             android:id="@+id/lottieAnimationView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dimen_20dp" />
+            android:layout_margin="20dp" />
 
         <TextView
                 android:textAlignment="viewStart"
@@ -48,8 +48,8 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginEnd="20dp"
-            android:paddingStart="@dimen/dimen_50dp"
-            android:paddingEnd="@dimen/dimen_50dp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
             android:text="@string/continue_shopping"
             android:textColor="@color/white" />
 
@@ -60,8 +60,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:paddingStart="@dimen/dimen_50dp"
-            android:paddingEnd="@dimen/dimen_50dp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
             android:text="@string/summary"
             android:textColor="@color/white" />
     </LinearLayout>

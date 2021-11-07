@@ -65,4 +65,9 @@
 
     <color name="albumSheetBottom">#992B2B2B</color>
     <color name="albumSheetLayer">#EE2B2B2B</color>
+
+    <color name="active_yellow">#FFFF00</color>
+    <color name="light_grey">#D3D3D3</color>
+
+
 </resources>
