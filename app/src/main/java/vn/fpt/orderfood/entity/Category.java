@@ -4,19 +4,25 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+import java.io.Serializable;
+
 @Entity
-public class Category {
+public class Category implements Serializable {
     @PrimaryKey
     private int categoryId;
 
     @ColumnInfo
     private String categoryName;
 
+    @ColumnInfo
+    private String categoryImage;
+
     public Category(){}
 
-    public Category(int categoryId, String categoryName) {
+    public Category(int categoryId, String categoryName, String categoryImage) {
         this.categoryId = categoryId;
         this.categoryName = categoryName;
+        this.categoryImage = categoryImage;
     }
 
     public int getCategoryId() {
@@ -33,5 +39,13 @@ public class Category {
 
     public void setCategoryName(String categoryName) {
         this.categoryName = categoryName;
+    }
+
+    public String getCategoryImage() {
+        return categoryImage;
+    }
+
+    public void setCategoryImage(String categoryImage) {
+        this.categoryImage = categoryImage;
     }
 }
