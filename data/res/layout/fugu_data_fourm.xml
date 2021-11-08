@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/llMessageBg" android:paddingTop="@dimen/fugu_margin_1" android:paddingBottom="@dimen/fugu_margin_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/fugu_margin_45" android:layout_marginEnd="@dimen/fugu_margin_45"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="bottom" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:gravity="bottom" android:id="@id/user_image" android:layout_width="30.0dip" android:layout_height="30.0dip" style="@style/user_image" />
+    </LinearLayout>
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/lllist" android:background="@drawable/hippo_chat_bg_left_normal" android:paddingTop="@dimen/fugu_margin_4" android:paddingBottom="@dimen/fugu_margin_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fugu_margin_5">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvDataForm" android:background="@color/hippo_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="LinearLayoutManager" />
+        <RelativeLayout android:gravity="right" android:orientation="vertical" android:id="@id/skip_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:gravity="center|right" android:id="@id/btnSkip" android:background="@color/hippo_transparent" android:paddingRight="@dimen/fugu_padding_8" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="skip" android:layout_alignParentRight="true" style="@style/lead_text" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

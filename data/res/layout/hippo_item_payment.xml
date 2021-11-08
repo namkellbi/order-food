@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/fugu_padding_10" app:cardBackgroundColor="@color/fugu_white" app:cardElevation="@dimen/fugu_elevation_4">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/fugu_padding_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hippo_title_item_description" />
+                <EditText android:scrollbarStyle="insideInset" android:id="@id/item_description" android:background="@drawable/hippo_lead_form_data_shape" android:paddingLeft="@dimen/fugu_padding_10" android:paddingRight="@dimen/fugu_padding_10" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/fugu_margin_10" android:minHeight="@dimen/fugu_dp_40" android:hint="@string/hippo_item_description" android:maxLines="4" android:singleLine="false" android:maxLength="250" android:inputType="textCapSentences|textMultiLine" android:overScrollMode="always" />
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hippo_title_item_price" />
+                <EditText android:id="@id/item_price" android:background="@drawable/hippo_lead_form_data_shape" android:paddingLeft="@dimen/fugu_padding_10" android:paddingRight="@dimen/fugu_padding_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/fugu_margin_10" android:minHeight="@dimen/fugu_dp_40" android:hint="@string/hippo_item_price" android:maxLines="1" android:singleLine="true" android:maxLength="10" android:digits="1234567890." android:inputType="number" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/cross_button" android:layout_width="@dimen/fugu_dp_35" android:layout_height="@dimen/fugu_dp_35" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/image_cross" android:layout_width="@dimen/fugu_size_25" android:layout_height="@dimen/fugu_size_25" android:src="@drawable/APKTOOL_DUMMY_277" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

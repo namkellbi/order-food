@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/my_toolbar" layout="@layout/fugu_layout_toolbar_left" />
+    <View android:id="@id/rv_top_divider" android:background="@color/vw_BgRv" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/my_toolbar" />
+    <androidx.cardview.widget.CardView android:id="@id/cardview" android:background="@color/hippo_red" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/rv_top_divider" android:elevation="@dimen/fugu_elevation_4">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/tb_pick" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_folder" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <TextView android:textSize="20.0dip" android:ellipsize="end" android:layout_gravity="center" android:id="@id/tv_folder" android:paddingLeft="@dimen/fugu_padding_8" android:paddingRight="@dimen/fugu_padding_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+                <ImageView android:layout_gravity="center" android:id="@id/iv_folder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/APKTOOL_DUMMY_26d" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_audio_pick" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/cardview" />
+</RelativeLayout>

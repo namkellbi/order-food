@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/fugu_margin_12" android:paddingRight="@dimen/fugu_margin_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/fugu_text_size_normal" android:id="@id/title_view" android:paddingLeft="@dimen/fugu_padding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" style="@style/lead_text" />
+        <TextView android:textSize="@dimen/fugu_text_size_small" android:id="@id/title_description" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_view" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/rlFeild" android:background="@drawable/hippo_lead_form_data_shape" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="@dimen/fugu_margin_4" android:layout_below="@id/title_description">
+            <TextView android:textSize="16.0sp" android:textColor="@color/fugu_primary_text_msg_from" android:gravity="center_vertical" android:id="@id/country_picker" android:paddingLeft="@dimen/fugu_padding_10" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:drawableRight="@drawable/APKTOOL_DUMMY_26d" />
+            <com.google.android.material.textfield.TextInputEditText android:textSize="16.0sp" android:textColor="@color/fugu_primary_text_msg_from" android:ellipsize="end" android:id="@id/field_view" android:background="@null" android:padding="@dimen/fugu_margin_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Type here" android:maxLines="1" android:layout_toLeftOf="@id/action_view" android:layout_toRightOf="@id/country_picker" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textColor="@color/hippo_red" android:id="@id/tvError" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fugu_margin_10" android:layout_below="@id/rlFeild" android:layout_marginStart="@dimen/fugu_margin_10" />
+    </RelativeLayout>
+</LinearLayout>

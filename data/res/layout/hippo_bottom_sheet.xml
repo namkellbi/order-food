@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/dialog" android:padding="@dimen/fugu_padding_4" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView android:background="@color/hippo_red" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/fugu_elevation_4">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rvAttachment" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <View android:id="@id/viewBottom" android:layout_width="fill_parent" android:layout_height="56.0dip" />
+</LinearLayout>

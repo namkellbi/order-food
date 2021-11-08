@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/fugu_margin_1" android:paddingBottom="@dimen/fugu_margin_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fugu_dp_35" android:layout_marginStart="@dimen/fugu_dp_35"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/fugu_text_size_medium" android:id="@id/title_view_text" android:padding="@dimen/fugu_padding_5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/tvfontTitle" />
+    <androidx.recyclerview.widget.RecyclerView android:scrollbarSize="3.0dip" android:id="@id/list_qr" android:scrollbars="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_margin="@dimen/fugu_margin_8" android:fadeScrollbars="false" app:layoutManager="LinearLayoutManager" />
+</LinearLayout>

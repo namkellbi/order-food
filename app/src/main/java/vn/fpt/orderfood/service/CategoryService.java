@@ -1,6 +1,7 @@
 package vn.fpt.orderfood.service;
 
 import androidx.room.Dao;
+import androidx.room.Insert;
 import androidx.room.Query;
 
 import java.util.List;
@@ -11,4 +12,7 @@ import vn.fpt.orderfood.entity.Category;
 public interface CategoryService {
     @Query("SELECT * FROM Category")
     List<Category> getAll();
+
+    @Insert
+    void insertAll(Category category);
 }

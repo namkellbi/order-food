@@ -1,6 +1,10 @@
 package vn.fpt.orderfood.adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,6 +20,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
 
+import java.io.File;
 import java.util.ArrayList;
 
 import vn.fpt.orderfood.R;
@@ -45,19 +50,28 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
         View view = LayoutInflater.from(parent.getContext()).inflate(layout, parent, false);
         return new ViewHolder(view);
     }
-
+    @SuppressLint("ResourceType")
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         final Category model = categoryList.get(position);
         holder.tvTitle.setText(model.getCategoryName());
 
-        Picasso.get()
-                .load(model.getCategoryImage())
-                .fit()
-                .centerInside()
-                .placeholder(R.drawable.placeholder)
-                .error(R.drawable.placeholder)
-                .into(holder.imgCategory);
+        File imgFile = new  File(model.getCategoryImage());
+        if(imgFile.exists()){
+
+            Bitmap myBitmap = BitmapFactory.decodeFile(imgFile.getAbsolutePath());
+
+            holder.imgCategory.setImageBitmap(myBitmap);
+
+        }
+
+//        Picasso.get()
+//                .load(model.getCategoryImage())
+//                .fit()
+//                .centerInside()
+//                .placeholder(R.drawable.placeholder)
+//                .error(R.drawable.placeholder)
+//                .into(holder.imgCategory);
 
         holder.lytMain.setOnClickListener(v -> {
             Fragment fragment = new SubCategoryFragment();

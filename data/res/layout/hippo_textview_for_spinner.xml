@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/main_layout" android:background="@color/hippo_white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/cb_item_view" android:layout_width="35.0dip" android:layout_height="35.0dip" />
+    <RadioButton android:id="@id/rb_item_view" android:layout_width="35.0dip" android:layout_height="35.0dip" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/item_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Item Name" />
+</LinearLayout>

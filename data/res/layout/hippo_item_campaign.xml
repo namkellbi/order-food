@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fugu_margin_10" android:layout_marginTop="@dimen/fugu_margin_10" android:layout_marginRight="@dimen/fugu_margin_10" app:cardCornerRadius="@dimen/cardview_default_radius"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/mainLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ivImage" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/fugu_margin_10" android:adjustViewBounds="true" android:layout_marginStart="@dimen/fugu_margin_10" android:layout_marginEnd="@dimen/fugu_margin_10" />
+        <TextView android:textSize="16.0sp" android:id="@id/tvTitle" android:paddingLeft="@dimen/fugu_margin_10" android:paddingRight="@dimen/fugu_margin_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fugu_margin_10" android:text="Title message" style="@style/tvfontBold" />
+        <TextView android:textSize="14.0sp" android:id="@id/tvDescription" android:paddingLeft="@dimen/fugu_margin_10" android:paddingRight="@dimen/fugu_margin_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/fugu_margin_10" android:text="This is a description text message" style="@style/tvfont" />
+        <TextView android:layout_gravity="right" android:id="@id/tvDateTime" android:paddingRight="@dimen/fugu_margin_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/fugu_margin_10" android:text="12 Dec, 2019" style="@style/tvfontTime" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="10.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/ivImageBig" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" app:srcCompat="@drawable/hippo_ic_gallery_camera" />
+        <LinearLayout android:layout_gravity="center" android:id="@id/llImageBg" android:background="@drawable/hippo_ring_grey" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ivImage" android:layout_width="30.0dip" android:layout_height="30.0dip" app:srcCompat="@drawable/APKTOOL_DUMMY_285" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/fugu_text_size_large" android:textColor="@color/fugu_attachment_dialog_text_selector" android:gravity="center" android:id="@id/tvAttachmentType" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/fugu_camera" />
+    </LinearLayout>
+</LinearLayout>
