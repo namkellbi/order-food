@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rlRoot" android:background="@color/fugu_chat_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/my_toolbar" layout="@layout/fugu_layout_toolbar_center" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/my_toolbar" android:animateLayoutChanges="true">
+        <LinearLayout android:gravity="center" android:id="@id/llInternet" android:background="@color/fugu_connected" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/my_toolbar">
+            <TextView android:textSize="15.0sp" android:textColor="@android:color/black" android:id="@id/tvStatus" android:padding="@dimen/fugu_margin_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Connected" />
+        </LinearLayout>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeRefresh" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/llInternet"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rvChannels" android:paddingBottom="40.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+    <View android:background="@drawable/hippo_bg_disabled" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_alignParentBottom="true" />
+    <TextView android:textColor="@android:color/white" android:id="@id/tvNewConversation" android:padding="@dimen/fugu_padding_15" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fugu_margin_20" android:text="@string/fugu_new_conversation" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:onClick="onClick" />
+    <TextView android:textSize="@dimen/fugu_text_size_large" android:textColor="@color/fugu_theme_color_primary" android:gravity="center" android:id="@id/tvNoInternet" android:padding="@dimen/fugu_padding_20" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fugu_no_internet_connection_retry" android:layout_centerInParent="true" android:onClick="onClick" />
+    <TextView android:textSize="@dimen/fugu_text_size_intermediate" android:textColor="@color/fugu_text_color_primary" android:gravity="center" android:id="@id/tvPoweredBy" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="20.0dip" android:text="@string/fugu_powered_by" android:layout_alignParentBottom="true" android:onClick="onClick" />
+</RelativeLayout>

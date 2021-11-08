@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="157.0dip" android:layout_height="121.0dip" android:src="@drawable/hippo_no_conversation_found" />
+    <TextView android:textSize="@dimen/fugu_text_size_very_large" android:textColor="@color/fugu_type_message_text" android:id="@id/title_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/fugu_no_conversation_found" />
+    <TextView android:textSize="@dimen/fugu_text_size_medium" android:textColor="@color/fugu_secondary_text_msg_from" android:gravity="center" android:id="@id/detail_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fugu_margin_7" android:text="@string/fugu_no_conversation" />
+</LinearLayout>

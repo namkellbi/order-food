@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/my_toolbar" layout="@layout/fugu_layout_toolbar_left" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_image_pick" android:background="@color/hippo_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/my_toolbar" />
+    <ProgressBar android:id="@id/pb_file_pick" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

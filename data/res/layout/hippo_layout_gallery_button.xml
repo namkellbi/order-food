@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/fugu_blur_black" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="5.0dip" />
+    <TextView android:gravity="center" android:id="@id/tvButton" android:background="?selectableItemBackground" android:padding="@dimen/fugu_padding_5" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="Click here!" />
+</LinearLayout>

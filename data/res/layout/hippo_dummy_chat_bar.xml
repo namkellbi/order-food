@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/cvTypeMessage" android:background="@drawable/hippo_curved_layout_normal_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/fugu_dp_6" android:layout_marginTop="@dimen/fugu_margin_4" android:layout_weight="0.8" android:elevation="@dimen/fugu_elevation_4" app:cardCornerRadius="30.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="bottom" android:id="@id/ivAttachment" android:background="?selectableItemBackgroundBorderless" android:paddingLeft="@dimen/fugu_padding_15" android:paddingTop="@dimen/fugu_padding_20" android:paddingRight="@dimen/fugu_padding_5" android:paddingBottom="@dimen/fugu_padding_10" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_225" android:onClick="onClick" android:rotation="-45.0" />
+            </LinearLayout>
+            <EditText android:textColor="@android:color/black" android:layout_gravity="center" android:id="@id/etMsg" android:background="@android:color/transparent" android:paddingTop="@dimen/fugu_padding_5" android:paddingRight="@dimen/fugu_padding_5" android:paddingBottom="@dimen/fugu_padding_5" android:scrollbars="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fugu_margin_5" android:maxHeight="100.0dip" android:hint="@string/fugu_send_message" android:cursorVisible="true" android:layout_weight="1.0" android:inputType="textCapSentences|textMultiLine" android:textCursorDrawable="@null" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/pbSendingImage" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="@dimen/fugu_margin_10" style="@android:style/Widget.ProgressBar" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <ImageView android:id="@id/ivSend" android:background="?selectableItemBackgroundBorderless" android:padding="@dimen/fugu_padding_10" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/fugu_send_normal" android:layout_weight="0.2" android:onClick="onClick" />
+</LinearLayout>

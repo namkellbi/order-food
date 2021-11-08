@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="com_appboy_content_card_background">#ff555555</color>
+    <color name="com_appboy_content_card_background_border">#ff555555</color>
+    <color name="com_appboy_content_card_background_shadow">#ff555555</color>
+    <color name="com_appboy_content_card_empty_text_color">@android:color/white</color>
+    <color name="com_appboy_content_cards_action_hint_text_color">#ff8ac7ff</color>
+    <color name="com_appboy_content_cards_description">@android:color/white</color>
+    <color name="com_appboy_content_cards_display_background_color">#ff1e1e1e</color>
+    <color name="com_appboy_content_cards_title">@android:color/white</color>
+    <color name="com_appboy_content_cards_unread_bar_color">#ff8ac7ff</color>
+</resources>

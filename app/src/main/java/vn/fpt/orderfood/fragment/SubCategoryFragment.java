@@ -212,6 +212,108 @@ public class SubCategoryFragment extends Fragment {
         return false;
     }
 
+//    @SuppressLint("NotifyDataSetChanged")
+//    void GetProducts() {
+//        startShimmer();
+//        productArrayList = new ArrayList<>();
+//        Map<String, String> params = new HashMap<>();
+//        params.put(Constant.CATEGORY_ID, id);
+//        params.put(Constant.USER_ID, session.getData(Constant.ID));
+//        params.put(Constant.LIMIT, "" + Constant.LOAD_ITEM_LIMIT);
+//        params.put(Constant.OFFSET, "" + offset);
+//        if (filterIndex != -1) {
+//            params.put(Constant.SORT, filterBy);
+//        }
+//
+//        ApiConfig.RequestToVolley((result, response) -> {
+//            if (result) {
+//                try {
+//                    JSONObject jsonObject1 = new JSONObject(response);
+//                    if (!jsonObject1.getBoolean(Constant.ERROR)) {
+//                        isSort = true;
+//                        total = Integer.parseInt(jsonObject1.getString(Constant.TOTAL));
+//                        JSONObject object = new JSONObject(response);
+//                        JSONArray jsonArray = object.getJSONArray(Constant.DATA);
+//                        try {
+//                            for (int i = 0; i < jsonArray.length(); i++) {
+//                                Product product = new Gson().fromJson(jsonArray.getJSONObject(i).toString(), Product.class);
+//                                productArrayList.add(product);
+//                            }
+//                        } catch (Exception e) {
+//                            stopShimmer();
+//                        }
+//                        if (offset == 0) {
+//                            productLoadMoreAdapter = new ProductLoadMoreAdapter(activity, productArrayList, resource, from);
+//                            recyclerView.setAdapter(productLoadMoreAdapter);
+//                            nestedScrollView.setVisibility(View.VISIBLE);
+//                            mShimmerViewContainer.setVisibility(View.GONE);
+//                            mShimmerViewContainer.stopShimmer();
+//                            nestedScrollView.setOnScrollChangeListener((NestedScrollView.OnScrollChangeListener) (v, scrollX, scrollY, oldScrollX, oldScrollY) -> {
+//                                // if (diff == 0) {
+//                                if (scrollY == (v.getChildAt(0).getMeasuredHeight() - v.getMeasuredHeight())) {
+//                                    LinearLayoutManager linearLayoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();
+//                                    if (productArrayList.size() < total) {
+//                                        if (!isLoadMore) {
+//                                            if (linearLayoutManager != null && linearLayoutManager.findLastCompletelyVisibleItemPosition() == productArrayList.size() - 1) {
+//                                                //bottom of list!
+//                                                productArrayList.add(null);
+//                                                productLoadMoreAdapter.notifyItemInserted(productArrayList.size() - 1);
+//
+//                                                offset += Integer.parseInt("" + Constant.LOAD_ITEM_LIMIT);
+//                                                Map<String, String> params1 = new HashMap<>();
+//                                                params1.put(Constant.CATEGORY_ID, id);
+//                                                params1.put(Constant.USER_ID, session.getData(Constant.ID));
+//                                                params1.put(Constant.LIMIT, "" + Constant.LOAD_ITEM_LIMIT);
+//                                                params1.put(Constant.OFFSET, offset + "");
+//                                                if (filterIndex != -1) {
+//                                                    params1.put(Constant.SORT, filterBy);
+//                                                }
+//                                                ApiConfig.RequestToVolley((result1, response1) -> {
+//                                                    if (result1) {
+//                                                        try {
+//                                                            productArrayList.remove(productArrayList.size() - 1);
+//                                                            productLoadMoreAdapter.notifyItemRemoved(productArrayList.size());
+//                                                            JSONObject jsonObject11 = new JSONObject(response1);
+//                                                            if (!jsonObject11.getBoolean(Constant.ERROR)) {
+//                                                                JSONObject object1 = new JSONObject(response1);
+//                                                                JSONArray jsonArray1 = object1.getJSONArray(Constant.DATA);
+//                                                                try {
+//                                                                    for (int i = 0; i < jsonArray1.length(); i++) {
+//                                                                        Product product = new Gson().fromJson(jsonArray1.getJSONObject(i).toString(), Product.class);
+//                                                                        productArrayList.add(product);
+//                                                                    }
+//                                                                } catch (Exception e) {
+//                                                                    nestedScrollView.setVisibility(View.VISIBLE);
+//                                                                    mShimmerViewContainer.setVisibility(View.GONE);
+//                                                                    mShimmerViewContainer.stopShimmer();
+//                                                                }
+//
+//                                                                productLoadMoreAdapter.notifyDataSetChanged();
+//                                                                isLoadMore = false;
+//                                                            }
+//                                                        } catch (JSONException e) {
+//                                                            e.printStackTrace();
+//                                                        }
+//                                                    }
+//                                                }, activity, Constant.GET_PRODUCT_BY_CATE, params1, false);
+//                                                isLoadMore = true;
+//                                            }
+//                                        }
+//                                    }
+//                                }
+//                            });
+//                        }
+//                    } else {
+//                        activity.invalidateOptionsMenu();
+//                        stopShimmer();
+//                    }
+//                } catch (JSONException e) {
+//                    stopShimmer();
+//                }
+//            }
+//        }, activity, Constant.GET_PRODUCT_BY_CATE, params, false);
+//    }
+
     @SuppressLint("UseCompatLoadingForDrawables")
     @Override
     public void onPrepareOptionsMenu(@NonNull Menu menu) {

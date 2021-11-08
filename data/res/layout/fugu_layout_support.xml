@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/fugu_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/fugu_text_size_normal" android:gravity="center_vertical" android:id="@id/support_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/fugu_min_height" android:drawableRight="@drawable/APKTOOL_DUMMY_29e" style="@style/hippo.text" />
+        <View android:id="@id/viewDivider" android:background="@color/fugu_border_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/rlRoot" />
+    </LinearLayout>
+</LinearLayout>

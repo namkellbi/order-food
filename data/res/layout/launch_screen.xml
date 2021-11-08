@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.woowahan.vn.baemin.common.GradientRelativeLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/iv_model">
+        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="27.0" />
+        <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_35d" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_weight="46.0" />
+        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="27.0" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_model" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_35c" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_alignParentBottom="true" />
+</com.woowahan.vn.baemin.common.GradientRelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fugu_margin_12" android:layout_marginTop="@dimen/fugu_margin_12" android:layout_marginRight="@dimen/fugu_margin_12" android:layout_marginBottom="@dimen/fugu_dp_1" card_view:cardBackgroundColor="@color/hippo_white" card_view:cardCornerRadius="@dimen/fugu_dp_1" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:splitMotionEvents="false">
+            <LinearLayout android:orientation="vertical" android:id="@id/linearLayoutMain" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/fugu_padding_10" android:splitMotionEvents="false">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/fugu_text_size_normal" android:textColor="@color/fugu_text_color_primary" android:id="@id/textViewStatus" android:layout_width="75.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fugu_margin_10" android:layout_marginRight="@dimen/fugu_margin_10" android:text="Status:" />
+                    <TextView android:textSize="@dimen/fugu_text_size_normal" android:textColor="@color/fugu_text_color_primary" android:id="@id/textViewStatusValue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Pending" android:layout_toRightOf="@id/textViewStatus" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fugu_margin_5">
+                    <TextView android:textSize="@dimen/fugu_text_size_normal" android:textColor="@color/fugu_text_color_primary" android:id="@id/textViewName" android:layout_width="75.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fugu_margin_10" android:layout_marginRight="@dimen/fugu_margin_10" android:text="Name:" />
+                    <TextView android:textSize="@dimen/fugu_text_size_normal" android:textColor="@color/fugu_text_color_primary" android:id="@id/textViewIdValue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Name" android:layout_toRightOf="@id/textViewName" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fugu_margin_5">
+                    <TextView android:textSize="@dimen/fugu_text_size_normal" android:textColor="@color/fugu_text_color_primary" android:id="@id/textViewTitle" android:layout_width="75.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fugu_margin_10" android:layout_marginRight="@dimen/fugu_margin_10" android:text="Title:" />
+                    <TextView android:textSize="@dimen/fugu_text_size_normal" android:textColor="@color/fugu_text_color_primary" android:id="@id/textViewTitleValue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Name" android:layout_toRightOf="@id/textViewTitle" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fugu_margin_5">
+                    <TextView android:textSize="@dimen/fugu_text_size_normal" android:textColor="@color/fugu_text_color_primary" android:id="@id/textViewMsg" android:layout_width="75.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fugu_margin_10" android:layout_marginRight="@dimen/fugu_margin_10" android:text="Message:" />
+                    <TextView android:textSize="@dimen/fugu_text_size_normal" android:textColor="@color/fugu_text_color_primary" android:id="@id/textViewMsgValue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="hkhsdk askdh kasdh kash dkjh aksdh kasdh khkasdh kasdk h" android:layout_toRightOf="@id/textViewMsg" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fugu_margin_5">
+                    <TextView android:textSize="@dimen/fugu_text_size_normal" android:textColor="@color/fugu_text_color_primary" android:id="@id/textViewDate" android:layout_width="75.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fugu_margin_10" android:layout_marginRight="@dimen/fugu_margin_10" android:text="Date:" />
+                    <TextView android:textSize="@dimen/fugu_text_size_normal" android:textColor="@color/fugu_text_color_primary" android:id="@id/textViewDateValue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="26-09-18" android:layout_toRightOf="@id/textViewDate" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:id="@id/viewExtra" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/linearLayoutMain" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

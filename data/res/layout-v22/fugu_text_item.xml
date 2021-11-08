@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="@dimen/fugu_padding_8" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:gravity="bottom" android:id="@id/user_image" android:background="@drawable/hippo_default_notif_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:baselineAlignBottom="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/llMessageBg" android:background="@drawable/hippo_chat_bg_left" android:paddingBottom="@dimen/fugu_margin_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/fugu_dp_55">
+        <TextView android:textSize="@dimen/hippo_text_title" android:textColor="@color/fugu_secondary_text_msg_from_name" android:id="@id/tvUserName" android:paddingLeft="@dimen/fugu_margin_15" android:paddingTop="@dimen/fugu_margin_7" android:paddingRight="@dimen/fugu_margin_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Amit Sharma" android:singleLine="true" android:breakStrategy="simple" />
+        <LinearLayout android:id="@id/rlMessages" android:paddingRight="@dimen/fugu_dp_8" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/hippo_text_normal" android:textColor="@color/fugu_primary_text_msg_from" android:textColorLink="@color/fugu_primary_text_msg_from" android:autoLink="all" android:id="@id/tvText" android:paddingLeft="@dimen/fugu_margin_15" android:paddingTop="@dimen/fugu_margin_2" android:paddingBottom="@dimen/fugu_margin_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="d" android:breakStrategy="simple" />
+            <TextView android:textSize="@dimen/hippo_text_time" android:textColor="@color/fugu_secondary_text_msg_you" android:gravity="bottom" android:layout_gravity="end|bottom|center" android:id="@id/tvTime" android:paddingRight="@dimen/fugu_padding_3" android:layout_width="wrap_content" android:layout_height="12.0dip" android:text="12:38 PM " android:layout_toRightOf="@id/tvText" android:layout_alignParentTop="true" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rlRoot" android:background="@color/fugu_chat_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/my_toolbar" layout="@layout/fugu_layout_toolbar_center" />
+    <TextView android:textSize="@dimen/fugu_text_size_intermediate" android:textColor="@color/fugu_text_color_primary" android:gravity="center" android:id="@id/tvPoweredBy" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="20.0dip" android:text="@string/fugu_powered_by" android:layout_alignParentBottom="true" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tvPoweredBy" android:layout_below="@id/my_toolbar" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <ProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerInParent="true" />
+    <TextView android:textSize="@dimen/fugu_text_size_normal" android:gravity="center" android:id="@id/tvNoDataFound" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="20.0dip" android:text="@string/fugu_no_data_found" android:layout_centerInParent="true" style="@style/hippo.text" />
+</RelativeLayout>
