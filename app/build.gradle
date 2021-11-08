@@ -3,12 +3,12 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 30
 
     defaultConfig {
         applicationId "vn.fpt.orderfood"
         minSdk 23
-        targetSdk 31
+        targetSdk 30
         versionCode 1
         versionName "1.0"
 
@@ -32,6 +32,7 @@ apply plugin: 'com.google.gms.google-services'
 
 dependencies {
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     def room_version = "2.3.0"
     //Firebase
     implementation platform('com.google.firebase:firebase-bom:29.0.0')

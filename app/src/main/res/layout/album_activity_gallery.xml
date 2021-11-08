@@ -3,7 +3,7 @@
     style="@style/Album.MatchParent"
     android:background="@color/albumColorPrimaryBlack">
 
-    <wrteam.ecart.shop.helper.album.widget.photoview.FixViewPager
+    <vn.fpt.orderfood.helper.album.widget.photoview.FixViewPager
         android:id="@+id/view_pager"
         style="@style/Album.MatchParent" />
 

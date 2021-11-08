@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<wrteam.ecart.shop.helper.album.widget.SquareCardView
+<vn.fpt.orderfood.helper.album.widget.SquareCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/Album.Item.Card.MatchParent">
 
@@ -13,7 +13,7 @@
             android:scaleType="centerCrop"
             />
 
-        <wrteam.ecart.shop.helper.album.widget.TransferLayout
+        <vn.fpt.orderfood.helper.album.widget.TransferLayout
             style="@style/Album.WrapContent.Transfer"
             android:layout_alignParentEnd="true"
             >
@@ -21,7 +21,7 @@
             <androidx.appcompat.widget.AppCompatCheckBox
                 android:id="@+id/check_box"
                 style="@style/Album.CheckBox.WrapContent" />
-        </wrteam.ecart.shop.helper.album.widget.TransferLayout>
+        </vn.fpt.orderfood.helper.album.widget.TransferLayout>
 
     </RelativeLayout>
 
@@ -39,4 +39,4 @@
 
     </FrameLayout>
 
-</wrteam.ecart.shop.helper.album.widget.SquareCardView>
+</vn.fpt.orderfood.helper.album.widget.SquareCardView>

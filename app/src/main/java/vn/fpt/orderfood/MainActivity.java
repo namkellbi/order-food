@@ -24,6 +24,7 @@ import vn.fpt.orderfood.Helper.Session;
 import vn.fpt.orderfood.common.MessageConstants;
 import vn.fpt.orderfood.config.AppDatabase;
 import vn.fpt.orderfood.fragment.CategoryFragment;
+import vn.fpt.orderfood.fragment.HomeFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -69,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
         fm = getSupportFragmentManager();
 
-        //homeFragment = new HomeFragment();
+        homeFragment = new HomeFragment();
         categoryFragment = new CategoryFragment();
         //favoriteFragment = new FavoriteFragment();
         //trackOrderFragment = new TrackOrderFragment();
@@ -79,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
 
         Bundle bundle = new Bundle();
         bottomNavigationView.setSelectedItemId(R.id.navMain);
-        active = categoryFragment;
+        active = homeFragment;
         homeClicked = true;
         drawerClicked = false;
         favoriteClicked = false;
@@ -88,10 +89,10 @@ public class MainActivity extends AppCompatActivity {
             if (!getIntent().getStringExtra("json").isEmpty()) {
                 bundle.putString("json", getIntent().getStringExtra("json"));
             }
-            categoryFragment.setArguments(bundle);
-            fm.beginTransaction().add(R.id.container, categoryFragment).commit();
+            homeFragment.setArguments(bundle);
+            fm.beginTransaction().add(R.id.container, homeFragment).commit();
         } catch (Exception e) {
-            fm.beginTransaction().add(R.id.container, categoryFragment).commit();
+            fm.beginTransaction().add(R.id.container, homeFragment).commit();
         }
 
         bottomNavigationView.setOnItemSelectedListener(item -> {

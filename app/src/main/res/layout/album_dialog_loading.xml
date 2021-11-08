@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/_35sdp"
     android:paddingBottom="@dimen/_20sdp">
 
-    <wrteam.ecart.shop.helper.album.widget.ColorProgressBar
+    <vn.fpt.orderfood.helper.album.widget.ColorProgressBar
         android:id="@+id/progress_bar"
         style="@style/Album.Progress.Loading" />
 
