@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.ActionBar" android:id="@id/my_toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="@dimen/fugu_elevation_4" app:contentInsetEnd="0.0dip" app:contentInsetStart="0.0dip" app:contentInsetStartWithNavigation="0.0dip" app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/fugu_text_size_very_large" android:layout_gravity="center" android:id="@id/tv_toolbar_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+</androidx.appcompat.widget.Toolbar>

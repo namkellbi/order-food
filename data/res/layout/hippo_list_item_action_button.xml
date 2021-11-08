@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/rl_button" android:background="@drawable/default_rectangular_button_empty" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/fugu_padding_5"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatButton android:textSize="@dimen/hippo_text_normal_bold" android:textColor="@color/fugu_action_bar_bg" android:gravity="center" android:layout_gravity="center" android:id="@id/btnAction" android:background="?selectableItemBackground" android:padding="@dimen/fugu_padding_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/fugu_elevation_4" />
+</RelativeLayout>

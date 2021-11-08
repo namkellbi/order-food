@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar android:id="@id/my_toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetEnd="0.0dip" app:contentInsetLeft="0.0dip" app:contentInsetRight="0.0dip" app:contentInsetStart="0.0dip" app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/icon_toolbar_left" android:background="?selectableItemBackground" android:layout_width="48.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+        <TextView android:textSize="@dimen/fugu_text_size_very_large" android:gravity="center_vertical" android:layout_gravity="start" android:id="@id/tv_toolbar_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/llBtn" android:paddingLeft="@dimen/fugu_margin_10" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/ivVideoView" android:padding="@dimen/fugu_margin_5" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="@dimen/fugu_margin_10" android:src="@drawable/APKTOOL_DUMMY_2a3" android:layout_centerVertical="true" android:onClick="onClick" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/ivAudioView" android:padding="@dimen/fugu_margin_5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/fugu_margin_10" android:src="@drawable/APKTOOL_DUMMY_274" android:layout_centerVertical="true" android:onClick="onClick" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>

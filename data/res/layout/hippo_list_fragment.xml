@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@color/hippo_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/fugu_text_size_normal" android:textColor="@color/fugu_theme_color_primary" android:id="@id/selected_team" android:padding="@dimen/fugu_padding_10" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fugu_margin_10" />
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/apply_btn" android:layout_below="@id/selected_team">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/list_view" android:paddingBottom="10.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fadeScrollbars="true" android:splitMotionEvents="false" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <include android:id="@id/llNoConversation" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="130.0dip" layout="@layout/hippo_layout_no_conversation_found" />
+        <Button android:textSize="@dimen/fugu_text_size_normal" android:textColor="@color/hippo_white" android:id="@id/apply_btn" android:background="@drawable/hippo_button_theme_selector" android:visibility="gone" android:layout_width="250.0dip" android:layout_height="@dimen/fugu_dp_40" android:layout_margin="@dimen/fugu_margin_10" android:text="APPLY" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

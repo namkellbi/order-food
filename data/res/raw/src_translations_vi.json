@@ -1,0 +1,758 @@
+{
+  "alert": {
+    "title": {
+      "logout": "Thoát ra",
+      "expire_token": "Phiên đăng nhập của bạn đã hết hạn",
+      "location_permission": "Bạn có đồng ý để \"BAEMIN\" truy cập vị trí của bạn không?",
+      "unavailable_location_permission": "BAEMIN không thể truy cập vị trí của bạn",
+      "location_vote": "Vote!",
+      "order_cancel": "Hủy đơn hàng",
+      "coupon_copied": "Đã sao chép!",
+      "coupon_code_copied": "Mã giảm giá đã được sao chép.",
+      "update_app": "Yêu cầu cập nhật",
+      "reset_basket": "Rời khỏi nhà hàng",
+      "order_timeout": "Lỗi hết hạn kết nối",
+      "order_network_failed": "Lỗi mất kết nối",
+      "add_address": "Không thể lưu thêm địa điểm mới nữa",
+      "partner_description": "\"Đối Tác\" là danh sách nhà hàng BAEMIN ưng ý nhất và muốn mời bạn thử.",
+      "delete_card": "Bạn chắc chắn muốn xoá thông tin?",
+      "payment_cancel": "Bạn có chắc mình muốn huỷ?",
+      "delete_cart": "Xóa giỏ hàng",
+      "start_new_cart": "Tạo giỏ hàng mới?",
+      "dish_sold_out": "Món này đã hết",
+      "dish_not_available": "Món này không có sẵn",
+      "code_push": "Cập nhật ứng dụng"
+    },
+    "message": {
+      "logout": "Bạn có chắc chắn muốn thoát ra không ? (hichic)",
+      "expire_token": "Phiên đăng nhập của bạn đã hết hạn do không có hoạt động thực hiện. Vui lòng nhấn Ok để đăng nhập lại lần nữa",
+      "location_permission": "Vị trí của bạn sẽ được sử dụng để tìm các nhà hàng gần nhất.",
+      "location_vote": "Cảm ơn bạn đã gợi ý. BAEMIN sẽ cố gắng đến gần bạn hơn.",
+      "order_cancel": "Đơn hàng vẫn đang rất ổn, bạn có chắc mình muốn hủy đơn này?",
+      "momo_user_cancel": "Giao dịch thanh toán qua Momo đã huỷ. Vui lòng thử lại lần nữa!",
+      "order_disappeared": "Xác nhận thanh toán không hợp lệ. Vui lòng đặt hàng lại lần nữa!",
+      "zalo_user_cancel": "Yêu cầu thanh toán đã hủy trên ZaloPay! Vui lòng thử lại!",
+      "zalo_order_invalid": "Uh-oh! Có lỗi xảy ra! Bạn hãy thử đặt lại đơn hàng nhé.",
+      "zalo_order_failed": "Yêu cầu thanh toán đã thất bại trên ZaloPay! Vui lòng thử lại!",
+      "vnp_order_failed": "Yêu cầu thanh toán đã thất bại trên VNPAY! Vui lòng thử lại!",
+      "update_app": "Phiên bản ứng dụng này sẽ sớm hết hạn và không thể sử dụng. Vui lòng cập nhật phiên bản mới nhất.",
+      "reset_basket": "Bạn có muốn xóa giỏ hàng tại {{merchantName}} và thêm món mới này?",
+      "order_timeout": "Kết nối vượt quá thời gian qui định. Vui lòng kiểm tra lại kết nối mạng và thử lại lần nữa",
+      "order_network_failed": "Vui lòng kiểm tra kết nối",
+      "add_address": "Xin lỗi! Bạn chỉ có thể lưu tối đa 5 địa điểm. Vui lòng xoá một trong những địa điểm đã lưu và thử lại nha.",
+      "blocked_user": "Tài khoản của bạn đã bị khóa vì lý do bảo mật. Vui lòng liên hệ Trung tâm chăm sóc khách hàng để biết thêm chi tiết.",
+      "error": "Uh-oh! Something went wrong!",
+      "max_item_count_per_order": "Bạn đã đặt tối đa số lượng đơn hàng cho phép. Vui lòng đặt lại lần nữa khi đơn hàng hiện tại hoàn tất.",
+      "order_excess_limit": "Bạn đã chạm mức tối đa cho mỗi đơn hàng rồi!",
+      "delete_card": "Thông tin thẻ không thể phục hồi sau khi xoá",
+      "block_wrong_bundle_id": "Yêu cầu truy cập không hợp lệ",
+      "delivery_finished": "Đơn hàng của bạn đã hoàn thành",
+      "failed_google_place_detail": "Bạn ơi kết quả này không dùng được! Bạn chọn địa chỉ khác trong kết quả nếu có nhé.",
+      "payment_cancel": "Đừng lo nhé, bạn vẫn có thể đặt lại đơn hàng sau khi huỷ",
+      "cant_use_apple_id": "“Đăng nhập bằng Apple ID” chỉ tương thích với hệ điều hành Apple từ iOS 13 trở về sau. Vui lòng cập nhật phần mềm điện thoại để có thể đăng nhập bằng Apple ID.",
+      "coupon_not_active": "Dịch vụ áp dụng khuyến mại tạm thời nâng cấp. Hiện tại mã khuyến mại không thể áp dụng bạn nhé. BAEMIN xin lỗi cho sự bất tiện này.",
+      "verify_limit": "Bạn ơi, chờ một xíu rồi thử lại nhé!",
+      "delete_cart": "Hãy chọn thêm sản phẩm để đặt hàng bạn nhé.",
+      "order_without_address": "Không tìm thấy địa chỉ giao hàng. Bạn ơi, nhập địa chỉ giao hàng lại nhé.",
+      "dish_sold_out": "Rất tiếc, món này hiện tại không có sẵn. Bạn có muốn xóa khỏi giỏ hàng?",
+      "dish_not_available": "Rất tiếc, món này hiện tại không có sẵn. Bạn có muốn xóa khỏi giỏ hàng?",
+      "code_push": "Đã có bản cập nhật ứng dụng mới, để cải thiện trải nghiệm tốt hơn. Hãy cập nhật bạn nhé!",
+      "location_permission_unavailable": "Bạn đã khóa toàn bộ quyền cho phép truy cập vị trí trên thiết bị này",
+      "basket_clear": "Bạn có chắc bạn muốn xoá hết?"
+    },
+    "button": {
+      "ok": "Ok",
+      "cancel": "Hủy",
+      "logout_confirm": "Thoát ra",
+      "logout_cancel": "Vẫn ở lại",
+      "location_permission_allow": "Mở cài đặt",
+      "Update_app_ok": "Cập nhật bây giờ",
+      "order_cancel_confirm": "Hủy đơn hàng",
+      "order_cancel_cancel": "Giữ đơn hàng",
+      "reset_basket_confirm": "Đồng ý",
+      "reset_basket_cancel": "Vẫn ở lại",
+      "claim_account": "Lấy lại tài khoản",
+      "close": "Đóng",
+      "payment_cancel_confirm": "Huỷ",
+      "payment_cancel_cancel": "Tiếp tục chờ",
+      "delete": "Xóa",
+      "later": "Để sau",
+      "continue": "Cập nhật",
+      "skip": "Bỏ qua"
+    }
+  },
+  "modal": {
+    "title": {
+      "save_cart_hint": "Tính năng lưu giỏ hàng!"
+    },
+    "message": {
+      "save_cart_hint": "Từ nay bạn cứ thoải mái tham khảo các cửa hàng nhé. Đã có BAEMIN giữ giỏ hàng rồi <3"
+    },
+    "button": {
+      "cool": "TUYỆT VỜI!"
+    }
+  },
+  "common": {
+    "ok": "OK",
+    "cancel": "Hủy",
+    "error_title": "Ui! có gì đó không đúng!",
+    "error_message": "Bạn hãy thử lại nhé.",
+    "see": "Xem",
+    "upper_ok": "OK"
+  },
+  "title": {
+    "address": "Nhập địa chỉ",
+    "update_address_detail": "Địa chỉ cụ thể",
+    "cancel_reason": "Vì sao bạn hủy đơn hàng này?",
+    "coupons": "Coupons",
+    "coupon_detail": "Thông tin mã giảm giá",
+    "promotion": "Khuyến mãi đang có",
+    "inbox": "Hộp thư",
+    "edit_profile": "Thông tin tài khoản",
+    "order_history": "Đơn hàng của tôi",
+    "order_phone": "Số điện thoại",
+    "order_note": "Lưu ý tới nhà hàng",
+    "choose_payment": "Hình thức thanh toán",
+    "payment": "Đang tiến hành thanh toán",
+    "update_coupon": "Mã khuyến mãi",
+    "payment_management": "Quản lí thanh toán",
+    "order_tracking": "Kiểm tra lộ trình đơn hàng",
+    "couponBox": "Ví Coupon",
+    "couponBoxMerchantList": "List nhà hàng áp dụng mã",
+    "favorite_merchant_list": "Nhà hàng yêu thích",
+    "ongoing_order_history": "Đơn hàng đang xử lý",
+    "merchant_information": "Thông tin thêm",
+    "categories": "Danh mục",
+    "sub_home_mart": "Mart",
+    "sub_home_kitchen": "Baemin Kitchen",
+    "basket": "Giỏ hàng"
+  },
+  "placeholder": {
+    "order_cancel_reason": "Nhập lý do.",
+    "name": "Tên",
+    "email": "Email",
+    "password": "Mật khẩu",
+    "address_detail": "+ Thêm vào tòa nhà, tầng, số phòng.",
+    "search_address": "Địa điểm hiện tại của bạn ở đâu?",
+    "search_dish": "Tìm trong thực đơn",
+    "update_address_detail": "Tên tòa nhà, số tầng...",
+    "update_coupon": "Nhập mã khuyến mãi",
+    "order_note": "Ví dụ: không hành lá,...",
+    "rider_rating_reason": "Cụ thể hơn về trải nghiệm của bạn:",
+    "search_restaurant": "Tìm nhà hàng, món ăn",
+    "coupon_code": "Nhập mã giảm giá ở đây"
+  },
+  "empty": {
+    "title": {
+      "merchant_list": "Xin lỗi, không có khuyến mãi nào gần bạn bây giờ.",
+      "inbox": "Đang hóng tin nhắn đầu tiên…",
+      "address": "Ơ, bạn đang ở đâu đấy?",
+      "search_address": "Úi! BAEMIN không tìm thấy chỗ này.",
+      "history": "Bạn chưa có lịch sử đặt hàng.",
+      "search": "Úi! BAEMIN tìm không thấy!",
+      "dish_search": "Úi! Không thấy món bạn tìm!",
+      "payment_management": "Chưa có thông tin thẻ lưu",
+      "couponBox_list": "Chưa có mã khuyến mãi khả dụng",
+      "please_login": "Bạn đăng nhập để xem deal hot nha!",
+      "favorite_merchant_list": "Nhà hàng yêu thích",
+      "ongoing_order_history": "Đơn hàng của bạn đã cập nhật",
+      "cancel_payment": "Giao dịch đã được huỷ",
+      "filter_not_found": "Chúng tôi không thể tìm thấy nhà hàng phù hợp với tiêu chí của bạn",
+      "no_merchant_nearby": "Rất tiếc, hiện không có nhà hàng nào gần bạn."
+    },
+    "text": {
+      "merchant_list": "Nhấn nút bên dưới để quay về.",
+      "inbox": "BAEMIN sẽ sớm trở lại, lợi hại hơn xưa!",
+      "address": "Hãy nhập địa chỉ nhận hàng để BAEMIN biết bạn đang ở đâu nhé!",
+      "search_address": "Bạn hãy kiểm tra lại địa chỉ đã nhập nhé!",
+      "history": "Đi ăn cùng BAEMIN nào!",
+      "search": "Hay mình thử từ khác xem sao?",
+      "coupon_list": "Hic, hiện không có mã nào khả dụng. Nhưng nếu bạn biết mã nào, nhập mã trực tiếp luôn nha.",
+      "dish_search": "Mình thử tìm lại nha.",
+      "payment_management": "Lưu thông tin thẻ để thanh toán nhanh hơn nha!",
+      "couponBox_list": "BAEMIN sẽ sớm gửi bạn nhiều coupon xịn nha",
+      "please_login": "Nhấn vào nút dưới",
+      "favorite_merchant_list": "Chỉ cần nhấn vào biểu tượng trái tim ở trên cùng mỗi trang nhà hàng, quán bạn lưu sẽ xuất hiện tại đây.",
+      "ongoing_order_history": "Xem chi tiết tại “Đơn hàng của tôi”",
+      "cancel_payment": "Bạn có muốn đặt lại đơn hàng không?",
+      "select_other_filters": "Vui lòng chọn tiêu chí hiển thị khác",
+      "please_try_again_later": "Vui lòng thử lại lúc khác bạn nhé!"
+    },
+    "button": {
+      "merchant_list": "Quay lại",
+      "please_login": "Đăng nhập",
+      "address": "Nhập địa chỉ",
+      "favorite_merchant_list": "ĐẶT MÓN",
+      "ongoing_order_history": "Xem đơn hàng"
+    }
+  },
+  "tooltip": {
+    "favorite_merchant_guide": "Lưu nhà hàng bạn thích và\nxem tại trang Cá Nhân",
+    "check_address": "Kiểm tra địa chỉ bạn nhé!",
+    "track_rider_location": "Kiểm tra lộ trình tài xế",
+    "delivery_info_3p": "Đối tác BAEMIN sẽ giao hàng trực tiếp cho bạn và phí giao hàng do đối tác quy định.",
+    "subHome_search": "Tìm kiếm sản phẩm tại đây"
+  },
+  "toast": {
+    "limit_basket_max_count": "Đơn hàng chỉ chứa tối đa {{count}} món. Vui lòng bỏ bớt để thêm món khác",
+    "limit_dish_max_count": "Xin lỗi, chỉ có thể chọn tối đa {{count}} món",
+    "limit_heavy_dish_max_count": "Xin lỗi, mỗi đơn hàng chỉ được phép đặt {{count}} món hàng quá cỡ"
+  },
+  "main_list_title": "Quanh đây có gì ngon?",
+  "deliver_to": "Giao hàng đến",
+  "main_recommend_title": "Vẫn đang suy nghĩ à?",
+  "main_recommend_text": "Thử thêm nhé!",
+  "main_see_all": "Xem tất cả",
+  "main_collection_see_all": "Xem tất\nluôn ha?",
+  "main_favorite_see_all": "Xem tất\nluôn ha?",
+  "not_available_title": "Bạn ơi, BAEMIN chưa đến đây!",
+  "not_available_text": "Bạn ráng chờ chút nhé.",
+  "location_vote": "GỢI Ý KHU VỰC CHO BAEMIN NHA",
+  "location_null_title": "Ơ, Bạn đang ở đâu đấy?",
+  "location_null_text": "Hãy nhập địa chỉ nhận hàng ở trên cùng màn hình để BAEMIN biết bạn đang ở đâu nhé!",
+  "cancel_button": "Hủy",
+  "address_text_title": "Giao đến",
+  "address_confirm_button": "Xác nhận",
+  "menu_login": "Đăng nhập",
+  "menu_history": "Lịch sử đặt hàng",
+  "menu_help": "Hỗ trợ",
+  "menu_payment_management": "Quản lí thanh toán",
+  "menu_coupon_box": "Ví Coupon",
+  "menu_favorite_merchant": "Nhà hàng yêu thích",
+  "login_connect": "Tiếp tục với",
+  "phone_button": "Số điện thoại",
+  "fb_button": "Facebook",
+  "apple_button": "Apple",
+  "login_phone_title": "BAEMIN xin chào!\nSố điện thoại của bạn là gì?",
+  "login_pw_title": "Nhập mật khẩu",
+  "next_button": "Tiếp theo",
+  "login_button": "Đăng nhập",
+  "forgot_password_button": "Quên mật khẩu?",
+  "forgot_password_text": {
+    "0": "Link đặt lại mật khẩu đã được gửi tới email của bạn.",
+    "1": "Vui lòng kiểm tra hộp thư hoặc spam:",
+    "2": "Chúng tôi đã gửi một đường dẫn để đặt lại mật khẩu qua email",
+    "3": "Hãy làm theo hướng dẫn trong email để đặt lại mật khẩu mới nhé."
+  },
+  "join_name_title": "Xin chào!\nTên của bạn là gì?",
+  "join_email_title": "Email của bạn là:",
+  "join_pw_title": "Hãy nhập mật khẩu của bạn",
+  "join_create_pw_title": "Đặt mật khẩu",
+  "join_create_pw_description": "Độ dài mật khẩu ít nhất là 6 ký tự",
+  "join_button": "Đăng ký thành viên",
+  "join_welcome": "Xong rồi!\nOrder luôn cho nóng!",
+  "tnc_text": {
+    "0": "Với việc đăng kí, bạn đồng ý với các",
+    "1": "Điều khoản và Điều kiện"
+  },
+  "profile_phone_label": "Số điện thoại",
+  "edit_button": "Chỉnh sửa",
+  "profile_name_label": "Tên",
+  "profile_name_placeholder": "Họ tên của bạn",
+  "profile_email_label": "Email",
+  "profile_pw_label": "Mật khẩu",
+  "profile_update_button": "Cập nhật",
+  "logout_button": "Thoát ra",
+  "search_suggestion_title": "Món gì đang hot?",
+  "search_history_title": "Tìm kiếm gần đây",
+  "search_cancel_button": "Hủy",
+  "search_result_title": "{{n}} nhà hàng được tìm thấy",
+  "search_result_more_dish_items": "Thêm {{n}} món",
+  "search_clear_button": "Xóa",
+  "merchant_closed": "Chưa mở cửa",
+  "merchant_faraway": "Quá xa",
+  "merchant_hours_title": "Thời gian mở cửa",
+  "week": {
+    "0": "Chủ nhật",
+    "1": "Thứ 2",
+    "2": "Thứ 3",
+    "3": "Thứ 4",
+    "4": "Thứ 5",
+    "5": "Thứ 6",
+    "6": "Thứ 7"
+  },
+  "merchant_informatin_title": "Thông tin thêm",
+  "merchant_location_title": "Địa chỉ",
+  "merchant_temporary_changed": "Lịch tạm thời",
+  "merchant_delivery_info_3p_title": "Giao hàng bởi đối tác",
+  "merchant_delivery_info_3p_description": "Phí giao hàng do Nhà hàng quyết định. Nếu có chênh lệch, Nhà hàng sẽ liên lạc bạn để thông báo trước khi giao.",
+  "merchant_open": "Đang mở cửa",
+  "merchant_closed_open": " ∙ Mở {{openHour}}",
+  "merchant_opening_soon": "Sắp mở cửa",
+  "merchant_closing_soon": "Sắp đóng cửa",
+  "merchant_hours_dayoff": "Ngày nghỉ ",
+  "merchant_minimum": "Đơn hàng tối thiểu ",
+  "merchant_promo": "Khuyến mãi",
+  "merchant_coupon": "Coupon của bạn",
+  "merchant_offers_see_more": "Xem thêm",
+  "merchant_coupon_see_more": "Mã giảm giá ở đây nữa nha!",
+  "merchant_coupon_see_less": "Thu gọn khung mã giảm giá",
+  "partner_label": "ĐỐI TÁC CỦA BAEMIN",
+  "copy_button": "SAO CHÉP",
+  "dish_count": {
+    "one": "{{count}} Món",
+    "other": "{{count}} Món"
+  },
+  "dish_price_currency": "{{n}}đ",
+  "dish_note_placeholder": "Lời nhắn cho cửa hàng",
+  "dish_maxquantity_info": {
+    "0": "Số lượng giới hạn - Bạn có thể đặt tối đa",
+    "1": " {{count}} ",
+    "2": "sản phẩm này cho mỗi đơn hàng",
+    "3": " (Còn: {{count}}). ",
+    "4": "Để đặt thêm, bạn vui lòng tạo thêm đơn hàng khác."
+  },
+  "heavy_maxquantity_info": {
+    "0": "Bạn có thể đặt tối đa",
+    "1": " {{count}} ",
+    "2": "sản phẩm “cồng kềnh” cho mỗi đơn hàng",
+    "3": " (Còn: {{count}}). ",
+    "4": "Để đặt thêm, bạn vui lòng tạo thêm đơn hàng khác."
+  },
+  "heavy_maxquantity_info_basket": "cồng kềnh (Còn: {{count}})",
+  "basket_maxquantity_info": {
+    "0": "Bạn có thể đặt tối đa",
+    "1": " {{count}} ",
+    "2": "sản phẩm này cho mỗi đơn hàng. Vui lòng thay đổi số lượng hoặc tạo thêm đơn hàng khác",
+    "3": "",
+    "4": ""
+  },
+  "basket_clear_button": "Xóa",
+  "dish_heavy_info": "Hàng cồng kềnh - Phụ phí và giới hạn số lượng có thể được áp dụng.",
+  "dish_required": "Chọn ít nhất 1 món",
+  "dish_required_count": "Chọn ít nhất {{count}} món",
+  "dish_option_size": "Tối đa {{n}}",
+  "dish_detail_info_title": "Chi tiết sản phẩm",
+  "dish_description_sold_out": "hết hàng",
+  "dish_stock_image": "Hình ảnh chỉ mang tính chất minh họa",
+  "dish_price": "· {{price}}",
+  "add_button": "Thêm",
+  "add_button_unselected": "Chọn topping",
+  "add_button_alreadyMaxDish": "Quá số lượng",
+  "add_button_disabled": {
+    "out_of_service": "Đóng cửa",
+    "merchant": "Đóng cửa",
+    "distance": "Quá xa",
+    "sold_out": "Hết món",
+    "sold_out_bss": "Hết món"
+  },
+  "cart_button": "Giỏ hàng",
+  "order_title": "Trang thanh toán",
+  "order_phone": "Số điện thoại",
+  "order_edit_button": "Thay đổi",
+  "order_menu_title": "Đơn hàng của bạn",
+  "order_subtotal": "Tạm tính  ({{totalItemCount}} món)",
+  "order_subtotal_plural": "Tạm tính  ({{totalItemCount}} món)",
+  "delivery_fee_title": "Phí áp dụng",
+  "order_fee": "Phí vận chuyển",
+  "order_fee_description": "Bao gồm: Phí giao cơ bản (dựa trên lộ trình của Google Maps) và Phụ phí: phí gửi xe,...\n\nPhí giao cơ bản có thể thay đổi trong điều kiện giao hàng khó khăn.",
+  "service_fee": "Phí dịch vụ",
+  "service_fee_description_partner": "Phí này giúp BAEMIN duy trì, cải thiện dịch vụ giao hàng cũng như mở rộng đối tác bán hàng tốt hơn.",
+  "service_fee_description_non_partner": "Phí này được áp dụng khi đặt đơn tại Quán không phải là đối tác của BAEMIN. Phí này giúp BAEMIN duy trì, cải thiện dịch vụ giao hàng cũng như mở rộng đối tác bán hàng tốt hơn.",
+  "order_discount": "Khuyến mãi",
+  "order_coupon": "Phiếu mua hàng",
+  "order_promo": "Nhập mã",
+  "order_note": "Ghi chú",
+  "order_total": "Tổng cộng",
+  "order_cash": "Chỉ thanh toán tiền mặt",
+  "order_button": "Đặt hàng",
+  "view_order_status": "Xem trạng thái đơn hàng",
+  "update_button": "Cập nhật",
+  "remove_button": "Xóa",
+  "apply_button": "Dùng",
+  "confirm_button": "Xác nhận",
+  "connect_button": "Liên kết tài khoản",
+  "history_inProgress": "Đơn hàng đang được thực hiện",
+  "history_completed": "Đơn hàng trước",
+  "reorder_button": "Đặt lại",
+  "status_processing": "Đang xử lý",
+  "status_ready": "Đang\nkiểm tra",
+  "status_preparing": "Đang\nchuẩn bị",
+  "status_delivering": "Đang\ngiao hàng",
+  "status_arrived": "Đã\nđến nơi",
+  "status_cancelled": "Đã hủy",
+  "status_delivered": "Đã giao",
+  "history_processing_text": {
+    "subtitle": "Bạn ơi chờ chút nhé",
+    "title": "Giao dịch đang được xử lý"
+  },
+  "history_ready_text": {
+    "subtitle": "Đơn hàng đã được tiếp nhận",
+    "title": "Đang tìm tài xế"
+  },
+  "history_preparing_text": {
+    "subtitle": "Đã tìm thấy tài xế",
+    "title": "Đang chuẩn bị đơn hàng"
+  },
+  "history_delivering_text": {
+    "subtitle": "Tài xế đã nhận món",
+    "title": "Tài xế đã xuất phát "
+  },
+  "histroy_reassign_text": {
+    "subtitle": "Đang tìm tài xế mới ...",
+    "title": "Đang tìm tài xế"
+  },
+  "history_3p_ready_text": {
+    "subtitle": "Giao hàng bởi đối tác",
+    "title": "Chờ tí nhé! Chúng tôi sẽ chuẩn bị đơn hàng của bạn ngay"
+  },
+  "history_3p_preparing_text": {
+    "subtitle": "Giao hàng bởi đối tác",
+    "title": "Đối tác của chúng tôi sẽ giao đến cho bạn ngay!"
+  },
+  "history_aha_ready_text": {
+    "subtitle": "Giao hàng bởi đối tác",
+    "title": "Đối tác của chúng tôi sẽ giao đến cho bạn ngay!"
+  },
+  "history_3p_eta_text": "Dự tính thời gian giao hàng là {{eta}} phút",
+  "history_3p_eta_nextday_text": "Thời gian giao hàng dự kiến\n Ngày mai.",
+  "history_3p_message": {
+    "title": "Đơn hàng của bạn sẽ được giao bởi đối tác của chúng tôi trong khoảng {{eta}} phút nữa",
+    "title_nextday": "Thời gian giao hàng dự kiến\n Ngày mai.",
+    "description": "Đơn hàng vẫn chưa được gửi đến bạn sao? Vui lòng liên hệ với đối tác chúng tôi nhé!",
+    "button": "Gọi đến nhà hàng"
+  },
+  "history_aha_message": {
+    "title": "Đơn hàng đang được giao bởi đối tác của chúng tôi",
+    "title_nextday": "Thời gian giao hàng dự kiến\n Ngày mai.",
+    "description": "Nếu đơn hàng chưa được gửi đến, bạn vui lòng chờ một xíu hoặc liên hệ với Trung Tâm Hỗ Trợ của chúng tôi nhé!",
+    "button": "Gọi Trung Tâm Hỗ Trợ"
+  },
+  "history_delayed_ready": {
+    "title": "Đơn hàng đang được kiểm tra",
+    "subtitle": ""
+  },
+  "history_delayed_accepted": {
+    "title": "Đang chuẩn bị đơn hàng",
+    "subtitle": "Quán đã nhận đơn"
+  },
+  "history_delayed_finding_rider": {
+    "title": "Đang tìm tài xế",
+    "subtitle": "Đơn hàng đã sẵn sàng"
+  },
+  "history_delayed_assigned": {
+    "title": "Tài xế đang đi lấy hàng",
+    "subtitle": "Đã tìm thấy tài xế"
+  },
+  "history_delayed_eta_text": "Giao hàng trong {{eta}} phút",
+  "order_rider_title": "BAEMIN Rider",
+  "order_info_title": "Thông tin đơn hàng",
+  "history_orderNo": "Mã đơn hàng",
+  "history_name": "Tên",
+  "history_phone": "Số điện thoại",
+  "history_address": "Địa chỉ",
+  "history_note": "Chú thích",
+  "cancel_order_button": "Hủy đơn hàng",
+  "help_button": "Hỗ trợ",
+  "retry_button": "Thử lại",
+  "onboarding": {
+    "step_0": {
+      "description": "Hãy nhập số điện thoại để tiếp tục nhé!",
+      "button": "KHÁM PHÁ THÊM"
+    },
+    "step_1": {
+      "description": "Cập nhật thông tin khuyến mãi lên đến 65% cùng nhiều món ngon mới hấp dẫn",
+      "button": "CẤP QUYỀN",
+      "button_android": "KẾ TIẾP"
+    },
+    "step_2": {
+      "description": "Chọn quyền \"Sử dụng mọi lúc\" sẽ cho phép BAEMIN dùng thông tin vị trí của bạn để tự động gợi ý nhà hàng cho bạn",
+      "button": "CẤP QUYỀN"
+    },
+    "step_3": {
+      "description": "Đừng đắn đo, mình bắt tay nhau khám phá nhé. Bạn ơi đăng kí thôi.",
+      "button": "ĐĂNG KÍ / ĐĂNG NHẬP",
+      "skip": "Để sau nha, mình muốn xem thêm chút nữa"
+    },
+    "location": {
+      "description": "Giúp tài xế của chúng tôi giao đến địa chỉ của bạn và xem các khuyến mãi gần đây",
+      "button": "Tiếp tục"
+    },
+    "notification": {
+      "description": "Nhờ đó mà BAEMIN có thể cập nhật đơn hàng của bạn theo từng phút.",
+      "button": "Tiếp tục"
+    },
+    "later_explore_food_first": "Để sau nha, mình muốn xem thêm chút nữa.",
+    "or_continue_with": "Hoặc đăng nhập bằng"
+  },
+  "order_distance_title": "Cửa hàng không thể phục vụ bạn",
+  "order_distance_msg": "Nơi này cách xa địa điểm của bạn quá.\nHãy thử những cửa hàng khác nhé.",
+  "order_error_title": "Restaurant Unavailable",
+  "submit_button": "Gửi",
+  "phone_format_error": "Vui lòng nhập đúng số điện thoại",
+  "password_error": "Mật khẩu bạn nhập không chính xác",
+  "name_overflow_error": "Tên của bạn không được quá {{n}} ký tự",
+  "name_length_error": "Tên của bạn phải có nhiều hơn {{n}} ký tự",
+  "name_format_error": "Your name can only contain alphabets, numbers, - or _",
+  "email_format_error": "Vui lòng kiểm tra lại địa chỉ email của bạn",
+  "password_overflow_error": "Mật khẩu của bạn không được quá {{n}} ký tự",
+  "password_length_error": "Mật khẩu của bạn phải có nhiều hơn {{n}} ký tự",
+  "phone_already_use_error": "Số điện thoại đã được sử dụng",
+  "email_already_use_error": "Địa chỉ Email đã được sử dụng",
+  "phone_rejoin_error": "Tài khoản đã bị xoá. Hãy liên lạc với BAEMIN để được hỗ trợ.",
+  "invalid_coupon_error": "Mã này không còn hiệu lực. Vui lòng thử lại",
+  "order_note_button": "Bạn có gì muốn nhắn tới nhà hàng không?",
+  "order_promo_button": "ADD A PROMO",
+  "order_rate_button": "Đánh giá",
+  "payment_cash": "Tiền mặt",
+  "payment_card": "VISA / MASTER",
+  "payment_atm": "Thẻ NAPAS",
+  "payment_momo": "Ví MoMo",
+  "payment_zalo": "Ví ZaloPay",
+  "payment_vnp": "Cổng VNPAY",
+  "payment_vtp": "ViettelPay",
+  "payment_subtitle": {
+    "cards": "Lưu thông tin thẻ",
+    "account": "Tài khoản liên kết",
+    "payment": "Chọn một hình thức thanh toán"
+  },
+  "payment_dc_card_description": {
+    "0": "Một số thẻ NAPAS (ATM) ",
+    "1": "sẽ không thể lưu ",
+    "2": "do chính sách của ngân hàng"
+  },
+  "payment_card_save_text": "Lưu thông tin thẻ",
+  "payment_card_save_maximum": "Giới hạn lưu trữ được tối đa {{n}} thẻ. Bạn nên xoá một thông tin thẻ đã lưu.",
+  "payment_card_limit_text": "Giới hạn lưu trữ được tối đa {{n}} thẻ.",
+  "payment_promotion_tooltip": "Khám phá thêm nhiều mã khuyến mãi tại đây",
+  "payment_promotion": "Mã khuyến mãi",
+  "vnpay_sdk_title": "VNPAY",
+  "delivery_option_title": "Giao hàng đặc biệt",
+  "door_to_door_title": "Giao tận cửa",
+  "door_to_door_text": "Đơn hàng của bạn sẽ được giao tới tận cửa. BAEMIN không chịu trách nhiệm trong trường hợp tài xế không thể giao hàng do quy định của tòa nhà nơi bạn ở.",
+  "order_paid_by_title": "Thanh toán bằng",
+  "order_refunded_title": "Refunded",
+  "rider_rating_title": "Chấm sao cho tài xế nhé!",
+  "rider_rating_reason_title_good": "Bạn ơi, mình nhớ khen tài xế nhé!",
+  "rider_rating_reason_title_bad": "BAEMIN nên cải thiện về điểm nào?",
+  "button": {
+    "save": "Lưu",
+    "saved": "Đã lưu",
+    "apply": "Áp dụng",
+    "cancel": "Hủy",
+    "use": "Chọn",
+    "use_later": "Sử dụng sau",
+    "back_merchant": "Quay lại nhà hàng"
+  },
+  "coupon_detail_valid_date": "Sử dụng đến:",
+  "address": {
+    "recent": "Địa điểm gần đây",
+    "my": "Địa điểm của tôi"
+  },
+  "reorder_msg_button": "Reorder this menu",
+  "help_msg_button": "Bạn cần giúp đỡ?",
+  "recommended": "Menu gợi ý",
+  "verify": {
+    "title": "Mã OTP xác nhận",
+    "description": "Hãy điền OTP gồm 6 số vừa được gửi đến số",
+    "resend_code_hint": "Không nhận được mã?",
+    "code_input": "Bạn hãy nhập mã OTP được gửi đến số điện thoại",
+    "code_resend": "Gửi lại",
+    "button": "Xác nhận"
+  },
+  "verify_error": {
+    "invalid_phone_number": "Số điện thoại không đúng. Vui lòng thử lại",
+    "invalid_verification_code": "Mã OTP không đúng hoặc đã hết hạn",
+    "many_requests": "Bạn đã vượt quá số lần nhận OTP trong ngày. Vui lòng thử lại vào ngày mai nhé!",
+    "timeout": "Mã xác nhận đã hết hạn",
+    "common": "Đã xuất hiện một lỗi không mong muốn. Vui lòng thử lại lần nữa"
+  },
+  "merchant_rating": {
+    "reason_title": {
+      "like": "Nói BAEMIN nghe lý do bạn thích nha!",
+      "dislike": "Góp ý cho BAEMIN để nhà hàng tốt hơn nhé!",
+      "subtitle": "Bạn có thể chọn hơn một lựa chọn nha"
+    },
+    "feedback": {
+      "button": "Lưu",
+      "placeholder": "Góp ý cho nhà hàng ở đây bạn nha",
+      "title": "Cảm nhận của bạn"
+    },
+    "feedback_label_rider": "Để lại đánh giá cho tài xế nhé",
+    "feedback_label_merchant": "Để lại đánh giá cho nhà hàng nhé",
+    "name_placeholder": {
+      "0": "Bạn thấy",
+      "1": "\"Nhà hàng {{name}}\" sao?"
+    },
+    "some_people_said_that": "{{countText}} khách hàng đã đánh giá như vậy",
+    "merchant_rating_hint": "Hãy cùng BAEMIN nâng cao chất lượng quán bằng cách đánh giá sau khi đơn hàng kết thúc bạn nhé!",
+    "rating_explanation_title": "Đánh giá cửa hàng",
+    "rating_explanation": "Đánh giá được thu thập từ khách hàng đã từng đặt món tại cửa hàng. Bạn có thể tham khảo để chọn quán ăn phù hợp.\n\nBạn cũng đừng quên để lại đánh giá sau mỗi đơn hàng để cửa hàng cải thiện dịch vụ, cũng như soi đường dẫn lối cho rất nhiều miệng ăn khác nhé!"
+  },
+  "rider_rating": {
+    "feedback": {
+      "placeholder": "Góp ý cho Tài xế ở đây bạn nha"
+    }
+  },
+  "momo_progress_description": "Thao tác thanh toán đang được thực hiện trong Momo",
+  "zalo_progress_description": "Thao tác thanh toán đang được thực hiện trong ZaloPay",
+  "vnp_progress_description": "Thao tác thanh toán đang được thực hiện trong VNPAY",
+  "couponBoxSection": {
+    "0": "Bạn ơi, ",
+    "1": "mã giảm giá vẫy gọi nè"
+  },
+  "couponBoxOffers": "Deal hot khuyến mãi",
+  "delayed_delivery_info": "Thời gian chuẩn bị 30 - 60 phút",
+  "dispatch_3p": "Delivered by partner",
+  "order_3p_fee": "Giao hàng bởi đối tác",
+  "order_3p_fee_description": "Phí giao hàng do Nhà hàng quyết định. Nếu có chênh lệch, Nhà hàng sẽ liên lạc bạn để thông báo trước khi giao.",
+  "status_3p": "Giao hàng bởi đối tác",
+  "freeship_3p": "Miễn phí ship",
+  "couponBoxMyCoupons": "Mã cá nhân",
+  "coupon": {
+    "expired_at": "HSD:",
+    "date_format": "DD.MM.YYYY"
+  },
+  "frequencyEventSection": {
+    "click": "Nhận quà!",
+    "stamps": "đơn",
+    "downloaded_the_coupon": "Mã khuyến mãi đang được gửi về.\nBạn hãy check mã trong phần \"Ví Coupon\" trong 24 giờ nha.",
+    "ending_soon": "SẮP KẾT THÚC",
+    "accomplished": "NHIỆM VỤ HOÀN THÀNH",
+    "get_reward": "Nhận {{n}} quà nè",
+    "ongoing": "Sắp có quà",
+    "finished": "Hoàn thành"
+  },
+  "ongoing_shortcut_count": {
+    "0": "Bạn có",
+    "1": "đơn hàng đang xử lý",
+    "2": "đơn hàng đang xử lý"
+  },
+  "basket_check_address": {
+    "0": "Bạn có chắc địa chỉ giao hàng chính xác?",
+    "1": "Địa chỉ giao hàng có vẻ xa với vị trí hiện tại của bạn."
+  },
+  "merchant_error": {
+    "title": "Quán tạm ngưng hoạt động",
+    "message": "Vì một số lý do, quán hiện đang tạm ngưng hoạt động. Bạn hãy chọn quán khác nhé."
+  },
+  "go_back": "Quay về",
+  "service_fee_title": "Phí dịch vụ",
+  "minimum_extra_fee": "Phí đơn hàng tối thiểu",
+  "minimum_order_fee_description": "Chỉ áp dụng với đơn hàng nhỏ hơn {{amount}}. Bạn hãy đặt thêm để tăng giá trị đơn hàng và tránh bị tính thêm phụ phí.",
+  "minimum_order_guide": "Tiết kiệm {{minOrderSurcharge}} với đơn hàng từ {{minOrder}}!",
+  "cancel_badge": "ĐÃ HỦY",
+  "reorder_section": {
+    "title": "Hôm nay thử lại nha",
+    "last_ordered_at": "Đặt lần cuối ngày {{date}}"
+  },
+  "favorite_section": {
+    "title": "Quán bạn đã lưu"
+  },
+  "item": "Món",
+  "items": "Món",
+  "internet_disconnected": "Ui, mất kết nối mạng rồi!",
+  "internet_connected": "Yay! Có kết nối mạng rồi!",
+  "internet_disconnected_message": "Bạn hãy kiểm tra lại kết nối mạng nhé!",
+  "slow_internet": "Uii! Kết nối đang gặp chút trục trặc",
+  "slow_internet_message": "BAEMIN không thể hiển thị màn hình này. \nXin vui lòng ấn thử lại",
+  "registered_phone_number": "Số điện thoại dùng đăng ký là {{phone}}",
+  "resend_link_button": "Gửi lại email",
+  "dont_get_reset_link": "Không nhận được email?",
+  "resend_otp_button": " Gửi mã OTP qua SMS",
+  "other_signin_button": "Cách thức đăng nhập khác",
+  "signup_email_message": "Đây là bước cuối cùng rồi đó bạn!\nĐừng quên xác nhận email sau khi đăng ký xong nha. Bạn sẽ nhận được nhiều thông báo quan trọng và dùng email này cho việc đặt lại mật khẩu.",
+  "recover_password_title": "Đặt mật khẩu mới",
+  "toast_resend_link": "Đã gửi email đặt lại mật khẩu.",
+  "exceed_otp": "Bạn đã vượt quá số lần nhận OTP trong ngày.\nVui lòng thử lại vào ngày mai nhé!",
+  "inform_email": {
+    "title": "Nhấn vào đây để xác thực email!",
+    "message": "Bạn sẽ nhận được nhiều thông báo quan trọng và dùng email cho việc đặt lại mật khẩu."
+  },
+  "verify_email": {
+    "message": "Bạn sẽ nhận được nhiều thông báo quan trọng và dùng email cho việc đặt lại mật khẩu.",
+    "button": "XÁC THỰC EMAIL",
+    "alert_title": "Email đã được gửi!",
+    "alert_message": "Bạn hãy kiểm tra email và hoàn thành việc xác thực trong 48h nhé!"
+  },
+  "signup_email": {
+    "title": "Email của bạn",
+    "0": "Xin vui lòng xác nhận email sau khi đăng ký.",
+    "1": "Bạn sẽ nhận được các cập nhật quan trọng từ BAEMIN hoặc đặt lại mật khẩu bằng email này."
+  },
+  "mart_horizontal_see_more": "Bạn có muốn\n xem thêm?",
+  "merchant_offers_modal_coupon_title": "Mã giảm giá áp dụng cho cửa hàng",
+  "merchant_offers_campaign_description": "*Điều khoản ưu đãi có thể thay đổi bất cứ lúc nào mà không cần thông báo.",
+  "merchant_offers_free": "miễn phí",
+  "offers_modal_coupon_title": "Extra coupons for this store!",
+  "order_validation_dish_error_reason": {
+    "dish_sold_out": "Hết món",
+    "invalid_dish_option": "Hết món thêm",
+    "invalid_dish_option_item": "Hết món thêm",
+    "under_required_option_item_count": "Chọn chưa đủ số lượng món thêm",
+    "exceeded_dish_option_item_limit": "Vượt quá số lượng món thêm",
+    "exceeded_dish_option_limit": "Vượt quá số lượng món thêm",
+    "dish_not_found": "Món này không còn phục vụ"
+  },
+  "subhome_icon_collection_title": "Xem thêm bạn nhé!",
+  "address_edit_button": "Chỉnh sửa",
+  "address_clear_button": "Xóa",
+  "add_address_button": "Thêm địa chỉ",
+  "add_address_placeholder": "Lưu địa chỉ",
+  "my_address_title": "Địa chỉ đã lưu",
+  "information_sharing_title": "Chia sẻ thông tin cá nhân",
+  "edit_address": {
+    "title": "Tên",
+    "title_placeholder": "Vd: Trường học, Phòng tập",
+    "address": "Địa chỉ",
+    "remarks": "Ghi chú cho tài xế",
+    "remarks_placeholder": "Vd: Vào trong hẻm đối diện trường học",
+    "remove_button": "Xóa địa chỉ",
+    "save_button": "Lưu",
+    "add_button": "Lưu địa chỉ",
+    "remove_address": "Xóa địa chỉ",
+    "duplicated_alert_title": "Địa chỉ '{{title}}' đã tồn tại. Bạn có muốn thay bằng địa chỉ khác?",
+    "duplicated_alert_message": "Bạn có thể dùng địa chỉ này cho lần tới!",
+    "duplicated_alert_ok": "Có, Thay thế",
+    "duplicated_alert_cancel": "Không, Hủy"
+  },
+  "add_address": {
+    "title": "Lưu địa chỉ",
+    "edit_title": "Sửa địa chỉ"
+  },
+  "address_type": {
+    "home": "Nhà",
+    "work": "Công Ty"
+  },
+  "address_alert": {
+    "title": "Giao đến địa chỉ này?",
+    "ok": "XÁC NHẬN",
+    "cancel": "SAI ĐỊA CHỈ"
+  },
+  "remove_filters": "Bỏ lựa chọn",
+  "filter_group_names": {
+    "categories": "Danh mục",
+    "merchantType": "Cửa hàng"
+  },
+  "phone_number": "Số điện thoại",
+  "toast_exit_app": "Bạn muốn thoát khỏi ứng dụng BAEMIN phải không?",
+  "merchant_comment": {
+    "no_comment": "Chưa có nhận xét",
+    "show_comment_button": "Xem {{num}} nhận xét",
+    "nav_title": "Đánh giá và Nhận xét",
+    "anonymous_switch": "Không hiện tên",
+    "report_button": "Báo cáo",
+    "report_toast": "Cám ơn bạn! Chúng tôi đã nhận được phản hồi.",
+    "anonymous_name": "Ẩn danh"
+  },
+  "continue": "Tiếp theo",
+  "phone_number_verification": {
+    "enter_phone_number": {
+      "title": "Nhập số điện thoại của bạn để tiếp tục nhé",
+      "description": "Mã xác nhận sẽ được gởi qua số điện thoại này"
+    }
+  },
+  "password_visibility": {
+    "show": "hiện",
+    "hide": "ẩn"
+  },
+  "complete": "Hoàn tất",
+  "information_sharing": {
+    "description": "Chọn những cửa hàng mà bạn muốn BAEMIN chia sẻ thông tin cá nhân bao gồm: **Tên, email, số điện thoại và thông tin đơn hàng**. Cửa hàng có thể dùng thông tin này để thiết kế các ưu đãi và cập nhật dành riêng cho bạn. BAEMIN sẽ **không chia sẻ thông tin về tài khoản thanh toán** của bạn với cửa hàng.",
+    "hint": "Bạn có thể thay đổi lựa chọn chia sẻ thông tin cá nhân này bất cứ lúc nào."
+  },
+  "vip": {
+    "button": "Chọn mã khuyến mãi nào"
+  },
+  "request_otp_timeout": "Lỗi yêu cầu gởi OTP"
+}

@@ -30,9 +30,12 @@ public class User {
     @ColumnInfo
     private int roleId;
 
+    @ColumnInfo
+    private String userImage;
+
     public User(){}
 
-    public User(int userId, String userName, String password, String phoneNumber, String email, String address, int status, int roleId) {
+    public User(int userId, String userName, String password, String phoneNumber, String email, String address, int status, int roleId, String userImage) {
         this.userId = userId;
         this.userName = userName;
         this.password = password;
@@ -41,6 +44,7 @@ public class User {
         this.address = address;
         this.status = status;
         this.roleId = roleId;
+        this.userImage = userImage;
     }
 
     public int getUserId() {
@@ -105,5 +109,13 @@ public class User {
 
     public void setRoleId(int roleId) {
         this.roleId = roleId;
+    }
+
+    public String getUserImage() {
+        return userImage;
+    }
+
+    public void setUserImage(String userImage) {
+        this.userImage = userImage;
     }
 }

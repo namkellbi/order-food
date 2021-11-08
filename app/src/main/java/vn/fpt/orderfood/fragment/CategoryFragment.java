@@ -3,6 +3,7 @@ package vn.fpt.orderfood.fragment;
 import static android.content.Context.INPUT_METHOD_SERVICE;
 
 import android.app.Activity;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -25,6 +26,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -58,7 +60,6 @@ public class CategoryFragment extends Fragment {
         db = Room.databaseBuilder(activity.getApplicationContext(),
                 AppDatabase.class, "foodOrder").allowMainThreadQueries().build();
         setHasOptionsMenu(true);
-
 
         tvNoData = root.findViewById(R.id.tvNoData);
         swipeLayout = root.findViewById(R.id.swipeLayout);

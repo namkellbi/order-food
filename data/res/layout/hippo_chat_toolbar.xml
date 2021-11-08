@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/my_toolbar" android:background="@color/hippoColorPrimaryDark" android:layout_width="fill_parent" android:layout_height="56.0dip" android:elevation="@dimen/fugu_elevation_4"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivBackBtn" android:padding="@dimen/fugu_margin_7" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/hippo_margin_16" android:src="@drawable/APKTOOL_DUMMY_26c" android:layout_centerVertical="true" android:onClick="onClick" android:layout_marginStart="@dimen/hippo_margin_16" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/llBtn" android:paddingLeft="@dimen/fugu_margin_10" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/ivVideoView" android:padding="@dimen/fugu_margin_5" android:visibility="visible" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="@dimen/fugu_margin_10" android:src="@drawable/APKTOOL_DUMMY_2a3" android:layout_centerVertical="true" android:onClick="onClick" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/ivAudioView" android:padding="@dimen/fugu_margin_5" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/fugu_margin_10" android:src="@drawable/APKTOOL_DUMMY_274" android:layout_centerVertical="true" android:onClick="onClick" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/llBtn" android:layout_toRightOf="@id/ivBackBtn">
+        <ImageView android:id="@id/user_image" android:layout_width="@dimen/fugu_dp_40" android:layout_height="@dimen/fugu_dp_40" android:layout_marginRight="@dimen/fugu_margin_10" />
+        <TextView android:textSize="@dimen/fugu_text_size_very_large" android:gravity="center_vertical" android:layout_gravity="start" android:id="@id/tv_toolbar_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

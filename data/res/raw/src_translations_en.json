@@ -1,0 +1,759 @@
+{
+  "alert": {
+    "title": {
+      "logout": "Logout",
+      "expire_token": "Login session expired",
+      "location_permission": "Allow \"BAEMIN\" to access your location while you are using the app?",
+      "unavailable_location_permission": "BAEMIN could not access to your location",
+      "location_vote": "Voted!",
+      "order_cancel": "Cancel Order",
+      "coupon_copied": "Copied!",
+      "coupon_code_copied": "Coupon code is copied.",
+      "update_app": "Update is required.",
+      "reset_basket": "Leave Restaurant",
+      "order_timeout": "Timeout error",
+      "order_network_failed": "No network error",
+      "add_address": "Cannot save more locations",
+      "partner_description": "ĐỐI TÁC is BAEMIN's Recommended Partner.",
+      "delete_card": "Are you sure you want to delete?",
+      "payment_cancel": "Are you sure you want to cancel?",
+      "delete_cart": "Delete your cart",
+      "start_new_cart": "Start new cart?",
+      "dish_sold_out": "Dish is sold out",
+      "dish_not_available": "Dish is no available",
+      "code_push": "Update available"
+    },
+    "message": {
+      "logout": "Are you sure you want to log out?",
+      "expire_token": "Your session expired due to inactivity. Please Click OK to log in again.",
+      "location_permission": "Your current location will be used to find nearby retaurants.",
+      "location_vote": "Thank you for your vote! We'll look into it.",
+      "order_cancel": "Do you really want to cancel your order?",
+      "momo_user_cancel": "Payment has been canceled in Momo. Please try again!",
+      "order_disappeared": "Payment confirmation is invalid. Please try to order again!",
+      "zalo_user_cancel": "Payment request has been canceled in ZaloPay! Please try again.",
+      "zalo_order_invalid": "Uh-oh! Something went wrong! Please try again.",
+      "zalo_order_failed": "Payment request was failed in ZaloPay! Please try again.",
+      "vnp_order_failed": "Payment request was failed in VNPAY! Please try again.",
+      "update_app": "This version of app is out of date and will stop working soon.\nPlease install the latest update.",
+      "reset_basket": "Would you like to clear the current cart at {{merchantName}} and add this item instead?",
+      "order_timeout": "The connection has timed out. Please check your network connectivity and try again.",
+      "order_network_failed": "Please, check your internet connection!",
+      "add_address": "Sorry! You can save up to 5 locations. Please delete your saved locations and try again.",
+      "blocked_user": "For security reasons your account is temporarily locked, tell us if you think we made a mistake.",
+      "error": "Uh-oh! Something went wrong!",
+      "max_item_count_per_order": "You have exceeded on the number of orders.",
+      "order_excess_limit": "You have reached maximum number of order items.",
+      "delete_card": "Card information cannot be restored after deleted",
+      "block_wrong_bundle_id": "Your access request is invalid.",
+      "delivery_finished": "Your order is finished",
+      "failed_google_place_detail": "Sorry! This address cannot be used! Please select other addresses in the result list.",
+      "payment_cancel": "Don't worry you still can reorder later",
+      "cant_use_apple_id": "‘Sign in with Apple’ is only available with iOS 13 or later version, Please update your software first in order to sign in with Apple ID.",
+      "coupon_not_active": "BAEMIN coupon service is temporary maintaining. The coupon cannot apply right now. We sincerely apologize for any inconvenience you may have.",
+      "verify_limit": "Please wait for a moment!",
+      "order_without_address": "We cannot found your delivery address. Please, input the delivery address again then!",
+      "delete_cart": "Please select an item to deliver.",
+      "dish_sold_out": "Sorry, this dish is sold out at the moment. Do you want to remove it from basket?",
+      "dish_not_available": "Sorry, this dish is not available at the moment. Do you want to remove it from basket?",
+      "code_push": "Update is available for more better app experience",
+      "location_permission_unavailable": "You have restricted all access to the device’s location services",
+      "basket_clear": "Are you sure you want to clear all?"
+    },
+    "button": {
+      "ok": "Ok",
+      "cancel": "Cancel",
+      "location_permission_allow": "Open Settings",
+      "Update_app_ok": "Update now",
+      "logout_confirm": "Logout",
+      "logout_cancel": "No, I'll stay",
+      "order_cancel_confirm": "Cancel order",
+      "order_cancel_cancel": "Keep order",
+      "reset_basket_confirm": "Delete cart",
+      "reset_basket_cancel": "Stay here",
+      "claim_account": "Claim Account",
+      "close": "Close",
+      "payment_cancel_confirm": "Yes, cancel",
+      "payment_cancel_cancel": "No, stay here",
+      "delete": "Delete",
+      "later": "Later",
+      "continue": "Continue",
+      "skip": "Skip"
+    }
+  },
+  "modal": {
+    "title": {
+      "save_cart_hint": "You can save your cart now!"
+    },
+    "message": {
+      "save_cart_hint": "Go out merchant and look for references with no worries. We keep the cart for you <3"
+    },
+    "button": {
+      "cool": "COOL!"
+    }
+  },
+  "common": {
+    "ok": "OK",
+    "cancel": "Cancel",
+    "error_title": "Uh-oh! Something went wrong!",
+    "error_message": "Please press the button to try again.",
+    "see": "See",
+    "upper_ok": "OK"
+  },
+  "title": {
+    "address": "Select Location",
+    "update_address_detail": "Address Details",
+    "cancel_reason": "Why do you want to cancel?",
+    "coupons": "Coupons",
+    "coupon_detail": "Coupon Detail",
+    "promotion": "Promotions",
+    "inbox": "Inbox",
+    "edit_profile": "Profile",
+    "order_history": "My Orders",
+    "order_phone": "Mobile Number",
+    "order_note": "Note to store",
+    "choose_payment": "Choose Payment",
+    "payment": "Payment processing",
+    "update_coupon": "Promo Code",
+    "payment_management": "Payment Management",
+    "order_tracking": "Order Tracking",
+    "couponBox": "Coupon Box",
+    "couponBoxMerchantList": "List of applicable restaurants",
+    "favorite_merchant_list": "My Favorites",
+    "ongoing_order_history": "On going orders",
+    "merchant_information": "Information",
+    "categories": "Categories",
+    "sub_home_mart": "Mart",
+    "sub_home_kitchen": "Baemin Kitchen",
+    "basket": "Basket"
+  },
+  "placeholder": {
+    "order_cancel_reason": "Please enter reason.",
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "address_detail": "+ Add building, floor, unit, etc.",
+    "search_address": "What's your location?",
+    "search_dish": "Search the menu",
+    "update_address_detail": "ex. building, floor, unit",
+    "update_coupon": "Enter Promotional Code",
+    "order_note": "E.g.: no green onion,...",
+    "rider_rating_reason": "Please tell us more…?",
+    "search_restaurant": "Search for a restaurant or menu",
+    "coupon_code": "Enter coupon code here"
+  },
+  "empty": {
+    "title": {
+      "merchant_list": "Sorry, there are no deals near your location at the moment.",
+      "inbox": "No Messages Yet",
+      "address": "Uh-oh! We need your location!",
+      "search_address": "Oh no! We couldn't find that location.",
+      "history": "You Haven't Ordered Anything Yet.",
+      "search": "Oh no! We couldn't find anything.",
+      "dish_search": "Ops! No matching result found",
+      "payment_management": "No card saved yet",
+      "couponBox_list": "no available coupons at the moment",
+      "please_login": "Please log in first to view your amazing coupon list",
+      "favorite_merchant_list": "Your Favorite Merchants",
+      "ongoing_order_history": "Your order has been updated",
+      "cancel_payment": "Payment is cancelled",
+      "filter_not_found": "We couldn’t find restaurants matching your criterias",
+      "no_merchant_nearby": "Sorry, there is no merchants near you right now."
+    },
+    "text": {
+      "merchant_list": "Please click the below button to return.",
+      "inbox": "We’ll be back with good news soon!",
+      "address": "Please input your delivery location",
+      "search_address": "Please check if you entered the correct address.",
+      "history": "Let's Order Something Tasty!",
+      "search": "Why don't you try something else?",
+      "coupon_list": "Sorry, no coupon at this time.\nBut if you know any, please enter the promo code directly.",
+      "dish_search": "Please search again",
+      "payment_management": "Save your card for a faster payment.",
+      "couponBox_list": "We will be back with awesome coupons soon!",
+      "please_login": "Click the button below",
+      "favorite_merchant_list": "Tap the heart on the top right of Merchant page, and it will automatically show on this page.",
+      "ongoing_order_history": "Please view details in “My Orders”",
+      "cancel_payment": "Do you want to reorder?",
+      "select_other_filters": "Please try to select different filters",
+      "please_try_again_later": "Please try again later!"
+    },
+    "button": {
+      "merchant_list": "GO BACK",
+      "please_login": "Login",
+      "address": "Select location",
+      "favorite_merchant_list": "LET'S EXPLORE",
+      "ongoing_order_history": "View My Orders"
+    }
+  },
+  "tooltip": {
+    "favorite_merchant_guide": "Save restaurant you like and\ncheck it in My Page",
+    "check_address": "Please check your address!",
+    "track_rider_location": "Track your rider location",
+    "delivery_info_3p": "BAEMIN partner will deliver to you directly and the delivery fee is determined by the partner.",
+    "subHome_search": "Search for item here"
+  },
+  "toast": {
+    "limit_basket_max_count": "Only {{count}} items are allowed for the order.If you want to add more items, remove others",
+    "limit_dish_max_count": "Sorry, only {{count}} items are allowed for this dish",
+    "limit_heavy_dish_max_count": "Sorry, you can have only {{count}} bulky Item per an order"
+  },
+  "main_list_title": "Restaurants near you",
+  "deliver_to": "Deliver to",
+  "main_recommend_title": "Still can't find anything?",
+  "main_recommend_text": "Why don't you try these",
+  "main_see_all": "See all",
+  "main_collection_see_all": "See all\ncollection?",
+  "main_favorite_see_all": "See all\nrestaurants?",
+  "not_available_title": "BAEMIN is coming to you!",
+  "not_available_text": "Hold tight, we'll meet you soon!",
+  "location_vote": "VOTE FOR YOUR AREA!",
+  "location_null_title": "Uh-oh! We need your location!",
+  "location_null_text": "Please input your delivery location on top of the screen first.",
+  "cancel_button": "Cancel",
+  "address_text_title": "Deliver to",
+  "address_confirm_button": "CONFIRM",
+  "menu_login": "Login",
+  "menu_history": "Order History",
+  "menu_help": "Help Center",
+  "menu_payment_management": "Payment Management",
+  "menu_coupon_box": "Coupon Box",
+  "menu_favorite_merchant": "My Favorites",
+  "login_connect": "Continue with",
+  "phone_button": "Mobile Number",
+  "fb_button": "Facebook",
+  "apple_button": "Apple",
+  "login_phone_title": "Xin Chào!\nWhat's your mobile?",
+  "login_pw_title": "Enter your password",
+  "next_button": "NEXT",
+  "login_button": "LOGIN",
+  "forgot_password_button": "Forgot password?",
+  "forgot_password_text": {
+    "0": "Password reset link was sent to your email.",
+    "1": "Please check your mail inbox or spam:",
+    "2": "Password reset link was sent to your email",
+    "3": "Please check your mail inbox or spam."
+  },
+  "join_name_title": "Xin chào!\nWhat is your name?",
+  "join_email_title": "What is \nyour email address?",
+  "join_pw_title": "Please enter \nyour password.",
+  "join_create_pw_title": "Create a password",
+  "join_create_pw_description": "Password length is at least 6 characters",
+  "join_button": "JOIN",
+  "join_welcome": "Welcome!\nNow let's go eat!",
+  "tnc_text": {
+    "0": "By signing up, you agree with our",
+    "1": "Terms and Conditions"
+  },
+  "profile_phone_label": "Mobile Number",
+  "edit_button": "EDIT",
+  "profile_name_label": "Name",
+  "profile_name_placeholder": "Your full name",
+  "profile_email_label": "Email",
+  "profile_pw_label": "Password",
+  "profile_update_button": "UPDATE",
+  "logout_button": "Logout",
+  "search_suggestion_title": "Món gì đang hot?",
+  "search_history_title": "Recent searches",
+  "search_cancel_button": "Cancel",
+  "search_result_title": "{{n}} Restaurants Found",
+  "search_result_more_dish_items": "{{n}} more items",
+  "search_clear_button": "Clear all",
+  "merchant_closed": "Closed",
+  "merchant_faraway": "Unreachable",
+  "merchant_hours_title": "Opening Hours",
+  "week": {
+    "0": "Sun",
+    "1": "Mon",
+    "2": "Tue",
+    "3": "Wed",
+    "4": "Thu",
+    "5": "Fri",
+    "6": "Sat"
+  },
+  "merchant_informatin_title": "Information",
+  "merchant_location_title": "Location",
+  "merchant_temporary_changed": "Temporarily changed",
+  "merchant_delivery_info_3p_title": "Delivered by partner",
+  "merchant_delivery_info_3p_description": "Merchant set their own delivery fee",
+  "merchant_open": "Open",
+  "merchant_closed_open": " ∙ Open {{openHour}}",
+  "merchant_opening_soon": "Opening soon",
+  "merchant_closing_soon": "Closing soon",
+  "merchant_hours_dayoff": "Closed",
+  "merchant_minimum": "Minimum Price",
+  "merchant_promo": "Promotion",
+  "merchant_coupon": "Coupon code",
+  "merchant_offers_see_more": "See more",
+  "merchant_coupon_see_more": "See more coupons...",
+  "merchant_coupon_see_less": "See less coupons...",
+  "partner_label": "ĐỐI TÁC CỦA BAEMIN",
+  "copy_button": "COPY",
+  "dish_count": {
+    "one": "{{count}} Item",
+    "other": "{{count}} Items"
+  },
+  "dish_price_currency": "{{n}}đ",
+  "dish_note_placeholder": "+ Note to Store",
+  "dish_maxquantity_info": {
+    "0": "Quantity limited - You can select only",
+    "1": " {{count}} ",
+    "2": "of this item per order",
+    "3": " (Left: {{count}}). ",
+    "4": "To order more, please place another order."
+  },
+  "heavy_maxquantity_info": {
+    "0": "You can select only",
+    "1": " {{count}} ",
+    "2": "bulky items per order",
+    "3": " (Left: {{count}}). ",
+    "4": "To order more, please place another order."
+  },
+  "heavy_maxquantity_info_basket": "Bulky Item (Max: {{count}})",
+  "basket_maxquantity_info": {
+    "0": "You are allowed to select only",
+    "1": " {{count}} ",
+    "2": "of items per order. Please adjust your number of selected items or place a separate order.",
+    "3": "",
+    "4": ""
+  },
+  "basket_clear_button": "Clear",
+  "dish_heavy_info": "Bulky item - Quantity limit and surcharge may be added.",
+  "dish_required": "Must select 1 item",
+  "dish_required_count": "Must select {{count}} items",
+  "dish_option_size": "Up to {{n}}",
+  "dish_detail_info_title": "Item Details",
+  "dish_description_sold_out": "Sold Out",
+  "dish_stock_image": "Photo for illustration",
+  "dish_price": "· {{price}}",
+  "add_button": "Add",
+  "add_button_unselected": "Option Required",
+  "add_button_alreadyMaxDish": "Maximum Quantity",
+  "add_button_disabled": {
+    "out_of_service": "Restaurant Closed",
+    "merchant": "Restaurant Closed",
+    "distance": "Unreachable Area",
+    "sold_out": "Sold Out",
+    "sold_out_bss": "Sold Out"
+  },
+  "cart_button": "CART",
+  "order_title": "Checkout",
+  "order_phone": "Mobile Number",
+  "order_edit_button": "Change",
+  "order_menu_title": "Your Order",
+  "order_subtotal": "Subtotal ({{totalItemCount}} item)",
+  "order_subtotal_plural": "Subtotal ({{totalItemCount}} items)",
+  "delivery_fee_title": "Applicable fees",
+  "order_fee": "Delivery Fee",
+  "order_fee_description": "Included Base fee (actual travel distance provided by Google maps) and Incurred fees (parking fee, etc).\n\nThe base fee could change under the difficult conditions to support riders to serve you better.",
+  "service_fee": "Service fee",
+  "service_fee_description_partner": "This helps BAEMIN to maintain, improve the platform, delivery service as well as wider merchant selection.",
+  "service_fee_description_non_partner": "This fee is applied with orders from the non-contracted merchants, it helps BAEMIN to maintain, improve the platform, delivery service as well as wider merchant selection.",
+  "order_discount": "Discount",
+  "order_coupon": "Coupon",
+  "order_promo": "Promotion",
+  "order_note": "Note",
+  "order_total": "Total",
+  "order_cash": "Cash Only",
+  "order_button": "ORDER",
+  "view_order_status": "View order status",
+  "update_button": "UPDATE",
+  "remove_button": "REMOVE",
+  "apply_button": "APPLY",
+  "confirm_button": "CONFIRM",
+  "connect_button": "Connect account",
+  "history_inProgress": "In progress",
+  "history_completed": "Previous order",
+  "reorder_button": "Reorder",
+  "status_processing": "Processing",
+  "status_ready": "Ready",
+  "status_preparing": "Preparing",
+  "status_delivering": "Delivering",
+  "status_arrived": "Arrived",
+  "status_cancelled": "Cancelled",
+  "status_delivered": "Delivered",
+  "history_processing_text": {
+    "subtitle": "Please wait a moment",
+    "title": "Your payment is\nprocessing now"
+  },
+  "history_ready_text": {
+    "subtitle": "Your order is submitted",
+    "title": "We are looking for a rider"
+  },
+  "history_preparing_text": {
+    "subtitle": "We've found you a rider",
+    "title": "We are placing your order"
+  },
+  "history_delivering_text": {
+    "subtitle": "Rider picked your order",
+    "title": "Rider is starting delivery"
+  },
+  "histroy_reassign_text": {
+    "subtitle": "Finding a new rider…",
+    "title": "We are looking for a rider"
+  },
+  "history_3p_ready_text": {
+    "subtitle": "DELIVERED BY PARTNER",
+    "title": "Relax while we place\nyour order"
+  },
+  "history_3p_preparing_text": {
+    "subtitle": "DELIVERED BY PARTNER",
+    "title": "Our partner will deliver to you!"
+  },
+  "history_aha_ready_text": {
+    "subtitle": "DELIVERED BY PARTNER",
+    "title": "Our partner will deliver to you!"
+  },
+  "history_3p_eta_text": "Estimated delivery time\n{{eta}} mins",
+  "history_3p_eta_nextday_text": "Estimated delivery time\n Next day",
+  "history_3p_message": {
+    "title": "Your order will be delivered by our partner within {{eta}}mins",
+    "title_nextday": "Estimated delivery time\n Next day",
+    "description": "Haven't you received your order yet?\nPlease contact our partner.",
+    "button": "CALL RESTAURANT"
+  },
+  "history_aha_message": {
+    "title": "Your order is delivering by our partner",
+    "title_nextday": "Estimated delivery time\n Next day",
+    "description": "If your order has not arrived yet, please wait a little bit more or contact our Customer Support!",
+    "button": "Call Customer Support"
+  },
+  "history_delayed_ready": {
+    "title": "Relax while we place your order",
+    "subtitle": ""
+  },
+  "history_delayed_accepted": {
+    "title": "We’re preparing your order",
+    "subtitle": "Store has confirmed your order"
+  },
+  "history_delayed_finding_rider": {
+    "title": "We are looking for a rider",
+    "subtitle": "Your oder is ready"
+  },
+  "history_delayed_assigned": {
+    "title": "Rider is picking up",
+    "subtitle": "We’ve found a rider"
+  },
+  "history_delayed_eta_text": "Delivery within {{eta}} mins",
+  "order_rider_title": "BAEMIN Rider",
+  "order_info_title": "Order Info.",
+  "history_orderNo": "Order ID",
+  "history_name": "Name",
+  "history_phone": "Mobile Number",
+  "history_address": "Address",
+  "history_note": "Note",
+  "cancel_order_button": "Cancel Order",
+  "help_button": "HELP",
+  "error_title": "Uh-oh! Something went wrong!",
+  "retry_button": "TRY AGAIN",
+  "onboarding": {
+    "step_0": {
+      "description": "Enter your phone number to continue",
+      "button": "EXPLORE MORE"
+    },
+    "step_1": {
+      "description": "Be informed of our promotions with discounts up to 65% and wonderful dishes",
+      "button": "GRANT PERMISSION",
+      "button_android": "NEXT"
+    },
+    "step_2": {
+      "description": "Grant the \"Always in use\" permission will allow us access to your background location and auto-suggest best restaurants for you",
+      "button": "GRANT PERMISSION"
+    },
+    "step_3": {
+      "description": "Don't hesitate to start embarking on this new journey. Hurry and press \"SIGN IN\"",
+      "button": "SIGN UP/ LOG IN",
+      "skip": "Later, I want to explore more now"
+    },
+    "location": {
+      "description": "Help our riders deliver your order to your location and see promotions nearby.",
+      "button": "Continue"
+    },
+    "notification": {
+      "description": "We inform you about your order status - by minutes.",
+      "button": "Continue"
+    },
+    "later_explore_food_first": "Later, let me explore the food first.",
+    "or_continue_with": "Or continue with"
+  },
+  "order_distance_title": "Restaurant Unavailable",
+  "order_distance_msg": "This restaurant is too far to order from your location. Please order from a different restaurant.",
+  "order_error_title": "Restaurant Unavailable",
+  "submit_button": "Submit",
+  "phone_format_error": "Please enter a valid phone number.",
+  "password_error": "The password you entered is incorrect.",
+  "name_overflow_error": "Your name cannot be longer than {{n}} characters.",
+  "name_length_error": "Your name cannot be shorter than {{n}} characters.",
+  "name_format_error": "Your name can only contain alphabets, numbers, - or _",
+  "email_format_error": "Please check your email format.",
+  "password_overflow_error": "Your password cannot be longer than {{n}} characters.",
+  "password_length_error": "Your password cannot be shorter than {{n}} characters.",
+  "phone_already_use_error": "This phone number is already in use.",
+  "email_already_use_error": "This email address is already in use.",
+  "phone_rejoin_error": "This account was deleted. Please contact us for furthur assistance.",
+  "invalid_coupon_error": "This code is invalid. Please try again.",
+  "order_note_button": "Any note for store?",
+  "order_promo_button": "ADD A PROMO",
+  "order_rate_button": "Rate",
+  "payment_cash": "Cash",
+  "payment_card": "VISA / MASTER",
+  "payment_atm": "NAPAS Card",
+  "payment_momo": "MoMo E-Wallet",
+  "payment_zalo": "ZaloPay",
+  "payment_vnp": "VNPAY",
+  "payment_vtp": "ViettelPay",
+  "payment_subtitle": {
+    "cards": "Saved cards",
+    "account": "Saved account",
+    "payment": "Choose a payment method"
+  },
+  "payment_dc_card_description": {
+    "0": "Some NAPAS Card (ATM Card) ",
+    "1": "will not be allowed to save ",
+    "2": "due to Bank’s agreements."
+  },
+  "payment_card_save_text": "Save this card information",
+  "payment_card_save_maximum": "Storage limit is up to {{n}} cards. You should remove one registered card.",
+  "payment_card_limit_text": "Storage limit is up to {{n}} cards.",
+  "payment_promotion_tooltip": "Click here to explore more promotions",
+  "payment_promotion": "Promo",
+  "vnpay_sdk_title": "VNPAY",
+  "delivery_option_title": "Delivery Options",
+  "door_to_door_title": "Door To Door",
+  "door_to_door_text": "Your orders will be delivered directly to your door on your building floor. BAEMIN will not be responsible for cases that riders cannot enter the premises due to the policies of buildings.",
+  "order_paid_by_title": "Paid by",
+  "order_refunded_title": "Refunded",
+  "rider_rating_title": "Please rate\nour BAEMIN rider!",
+  "rider_rating_reason_title_good": "Could you give compliments?",
+  "rider_rating_reason_title_bad": "What could be improved?",
+  "button": {
+    "save": "Save",
+    "saved": "Saved",
+    "apply": "Apply",
+    "cancel": "Cancel",
+    "use": "Use",
+    "use_later": "USE LATER",
+    "back_merchant": "BACK TO RESTAURANT"
+  },
+  "coupon_detail_valid_date": "Valid Until:",
+  "address": {
+    "recent": "Recent location",
+    "my": "My location"
+  },
+  "reorder_msg_button": "Reorder this menu",
+  "help_msg_button": "Need a help?",
+  "recommended": "Recommended Menu",
+  "verify": {
+    "title": "OTP Verification Code",
+    "description": "Enter the 6 digits code sent to you at",
+    "resend_code_hint": "Didn't receive the code?",
+    "code_input": "Please enter the verification code sent to your phone number",
+    "code_resend": "Resend code",
+    "button": "Verify"
+  },
+  "verify_error": {
+    "invalid_phone_number": "Phone number is not correct, please try again",
+    "invalid_verification_code": "The OTP is not correct or expired",
+    "many_requests": "You’ve reached the daily OTP attempts. Please try again tomorrow!",
+    "timeout": "This verification code is expired.",
+    "common": "An unexpected error occurred. please try again."
+  },
+  "merchant_rating": {
+    "reason_title": {
+      "like": "What did you like about this restaurant?",
+      "dislike": "What would like to see improved?",
+      "subtitle": "You can select more than one option"
+    },
+    "feedback": {
+      "button": "Save",
+      "placeholder": "Please leave your feedback here for the restaurant",
+      "title": "Leave feedback"
+    },
+    "feedback_label_rider": "Leave feedbacks for the rider",
+    "feedback_label_merchant": "Leave feedbacks for the restaurant",
+    "name_placeholder": {
+      "0": "How was",
+      "1": "\"{{name}}\" restaurant?"
+    },
+    "some_people_said_that": "{{countText}} people said that",
+    "merchant_rating_hint": "Let’s improve the merchant quality with BAEMIN by rating after the order finish!",
+    "rating_explanation_title": "Store Rating",
+    "rating_explanation": "Store reviews are collected from various customers with previous experiences with their dishes. We hope it will help your ordering process better.\n\nPlease take your time to send us feedback on your order to improve the store's quality as well as other customers’ experiences!"
+  },
+  "rider_rating": {
+    "feedback": {
+      "placeholder": "Please leave your feedback here for the Rider"
+    }
+  },
+  "momo_progress_description": "Payment is processing in Momo",
+  "zalo_progress_description": "Payment is processing in ZaloPay",
+  "vnp_progress_description": "Payment is processing in VNPAY",
+  "couponBoxSection": {
+    "0": "Please check your ",
+    "1": "coupons!"
+  },
+  "couponBoxOffers": "Offers",
+  "delayed_delivery_info": "Preparation time: 30 - 60 mins",
+  "dispatch_3p": "Delivered by partner",
+  "order_3p_fee": "Delivered by partner",
+  "order_3p_fee_description": "Delivery fee will be determined by restaurant and restaurant will contact you to notify before delivery if there is any difference.",
+  "status_3p": "Delivered by partner",
+  "freeship_3p": "Freeship",
+  "couponBoxMyCoupons": "My Coupons",
+  "coupon": {
+    "expired_at": "EXP:",
+    "date_format": "MMM DD, YYYY"
+  },
+  "frequencyEventSection": {
+    "click": "Click!",
+    "stamps": "orders",
+    "downloaded_the_coupon": "Your coupon is on the way.\nPlease check your \"Coupon Box\" within 24 hours",
+    "ending_soon": "ENDING SOON",
+    "accomplished": "MISSION ACCOMPLISHED",
+    "get_reward": "Get {{n}} rewards",
+    "ongoing": "Almost there",
+    "finished": "Finished"
+  },
+  "ongoing_shortcut_count": {
+    "0": "You have",
+    "1": "on going order",
+    "2": "on going orders"
+  },
+  "basket_check_address": {
+    "0": "Are you sure your address is correct?",
+    "1": "Your current address is far from your current location."
+  },
+  "merchant_error": {
+    "title": "Merchant is not available",
+    "message": "Due to some reasons, this merchant is not available right now. Please choose other merchant."
+  },
+  "go_back": "Go back",
+  "service_fee_title": "Service Fee",
+  "minimum_extra_fee": "Small order fee",
+  "minimum_order_fee_description": "Only apply to orders less than {{amount}}. Add more worth of items to remove this fee.",
+  "minimum_order_guide": "Save {{minOrderSurcharge}} with order above {{minOrder}}!",
+  "cancel_badge": "CANCELLED",
+  "reorder_section": {
+    "title": "Maybe you want to try again?",
+    "last_ordered_at": "Last ordered on {{date}}"
+  },
+  "favorite_section": {
+    "title": "Your favorite restaurants"
+  },
+  "item": "Item",
+  "items": "Items",
+  "internet_disconnected": "Uh-oh! Network connection lost!",
+  "internet_connected": "Yay! Network connection is back!",
+  "internet_disconnected_message": "Please check your network and try again!",
+  "slow_internet": "The connection is having a problem",
+  "slow_internet_message": "BAEMIN could not load this screen. \nPlease try again",
+  "registered_phone_number": "Your registered phone number is {{phone}}",
+  "resend_link_button": "Resend link",
+  "dont_get_reset_link": "Don’t get reset link?",
+  "resend_otp_button": "Send OTP via SMS",
+  "other_signin_button": "Other signin options",
+  "signup_email_message": "Almost done! It's greater if you could verify your email after joining us. You will receive an important notification and use this email for password reset.",
+  "recover_password_title": "Set new password",
+  "toast_resend_link": "An email with reset link was sent.",
+  "exceed_otp": "You’ve reached the daily OTP attempts.\nPlease try again tomorrow!",
+  "inform_email": {
+    "title": "Tap here to verify your email",
+    "message": "You will receive important notification and use this email for password reset."
+  },
+  "verify_email": {
+    "message": "You will receive important notification and use this email for password reset.",
+    "button": "VERIFY EMAIL",
+    "alert_title": "We’ve sent you email!",
+    "alert_message": "Please check your mailbox and finish verification process in 48h."
+  },
+  "signup_email": {
+    "title": "Your email address",
+    "0": "Please verify your email after joining us.",
+    "1": "You will receive important updates and use this email for password reset."
+  },
+  "mart_horizontal_see_more": "Do you want\nto see more?",
+  "merchant_offers_modal_coupon_title": "Applicable coupons for this store",
+  "merchant_offers_campaign_description": "*Terms are subject to change and offer is subject to end at any time without notice.",
+  "merchant_offers_free": "Free",
+  "offers_modal_coupon_title": "Extra coupons for this store!",
+  "order_validation_dish_error_reason": {
+    "dish_sold_out": "Item is sold out",
+    "invalid_dish_option": "Option items are sold out or invalid",
+    "invalid_dish_option_item": "Option items are sold out or invalid",
+    "under_required_option_item_count": "Below required option item count",
+    "exceeded_dish_option_item_limit": "Exceeded dish option item limit",
+    "exceeded_dish_option_limit": "Exceeded dish option limit",
+    "dish_not_found": "Item is not available"
+  },
+  "subhome_icon_collection_title": "Explore by brands",
+  "address_edit_button": "Edit",
+  "address_clear_button": "Clear",
+  "add_address_button": "Add other address",
+  "add_address_placeholder": "Add your address",
+  "my_address_title": "My Address",
+  "information_sharing_title": "Information Sharing",
+  "edit_address": {
+    "title": "Title",
+    "title_placeholder": "Title",
+    "address": "Address",
+    "remarks": "Address Remarks",
+    "remarks_placeholder": "Address Remarks",
+    "remove_button": "Remove this address",
+    "save_button": "SAVE",
+    "add_button": "ADD ADDRESS",
+    "remove_address": "Remove this address",
+    "duplicated_alert_title": "You already have '{{title}}'. Would you like to proceed to update your current '{{title}}' address?",
+    "duplicated_alert_message": "You can use this address next time!",
+    "duplicated_alert_ok": "Yes, Update",
+    "duplicated_alert_cancel": "No, Cancel"
+  },
+  "add_address": {
+    "title": "Add Address",
+    "edit_title": "Edit Address"
+  },
+  "address_type": {
+    "home": "Home",
+    "work": "Work"
+  },
+  "address_alert": {
+    "title": "Deliver to this address?",
+    "ok": "CONFIRM",
+    "cancel": "NO, WRONG ADDRESS"
+  },
+  "remove_filters": "Remove filters",
+  "filter_group_names": {
+    "categories": "Categories",
+    "merchantType": "Store type"
+  },
+  "phone_number": "Phone number",
+  "toast_exit_app": "Do you want to exit the BAEMIN App?",
+  "merchant_comment": {
+    "no_comment": "No review",
+    "show_comment_button": "See {{num}} reviews",
+    "nav_title": "Ratings and Reviews",
+    "anonymous_switch": "Hide my name",
+    "report_button": "Report abuse or spam",
+    "report_toast": "Thank you! We have received your report.",
+    "anonymous_name": "Anonymous"
+  },
+  "continue": "Continue",
+  "phone_number_verification": {
+    "enter_phone_number": {
+      "title": "Enter your phone number to continue",
+      "description": "We will send a verification code to this number"
+    }
+  },
+  "password_visibility": {
+    "show": "show",
+    "hide": "hide"
+  },
+  "complete": "Complete",
+  "information_sharing": {
+    "description": "Choose the restaurants BAEMIN can share your **name, email, phone number, and order information** with. Restaurants may use the information to personalize promotions & updates for you. BAEMIN will not share your **payment account information**. ",
+    "hint": "You can change this preference anytime."
+  },
+  "vip": {
+    "button": "Select your coupons now"
+  },
+  "request_otp_timeout": "Request OTP timeout"
+}

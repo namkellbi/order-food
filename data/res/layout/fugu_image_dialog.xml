@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hippo.utils.zoomview.ZoomageView android:id="@id/ivImage" android:paddingLeft="@dimen/fugu_padding_10" android:paddingTop="30.0dip" android:paddingRight="@dimen/fugu_padding_10" android:paddingBottom="@dimen/fugu_padding_10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <TextView android:textSize="@dimen/fugu_text_size_large" android:textColor="@android:color/white" android:gravity="end" android:id="@id/tvCross" android:background="@drawable/fugu_text_gradient" android:paddingLeft="@dimen/fugu_padding_15" android:paddingTop="@dimen/fugu_padding_20" android:paddingRight="@dimen/fugu_padding_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/fugu_margin_10" android:text="CLOSE" android:layout_alignParentRight="true" />
+    <ImageView android:layout_gravity="center" android:id="@id/ivSend" android:padding="@dimen/fugu_padding_5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fugu_margin_10" android:src="@drawable/fugu_send_normal" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:onClick="onClick" />
+</RelativeLayout>

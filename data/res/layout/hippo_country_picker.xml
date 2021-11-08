@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/country_code_picker_search" android:background="@android:color/transparent" android:padding="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hippo_search" android:maxLines="1" android:drawableLeft="@drawable/APKTOOL_DUMMY_29a" android:imeOptions="actionSearch" android:drawableStart="@drawable/APKTOOL_DUMMY_29a" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/countries_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -22,20 +22,20 @@ public class Food {
     private int status;
 
     @ColumnInfo
-    private int quantity;
+    private String foodImage;
 
     @ColumnInfo
     private int categoryId;
 
     public Food(){}
 
-    public Food(int foodId, String foodName, String foodDescription, double foodPrice, int status, int quantity, int categoryId) {
+    public Food(int foodId, String foodName, String foodDescription, double foodPrice, int status, String foodImage, int categoryId) {
         this.foodId = foodId;
         this.foodName = foodName;
         this.foodDescription = foodDescription;
         this.foodPrice = foodPrice;
         this.status = status;
-        this.quantity = quantity;
+        this.foodImage = foodImage;
         this.categoryId = categoryId;
     }
 
@@ -79,12 +79,12 @@ public class Food {
         this.status = status;
     }
 
-    public int getQuantity() {
-        return quantity;
+    public String getFoodImage() {
+        return foodImage;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public void setFoodImage(String foodImage) {
+        this.foodImage = foodImage;
     }
 
     public int getCategoryId() {

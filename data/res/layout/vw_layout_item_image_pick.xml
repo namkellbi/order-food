@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/vw_BgItem" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/iv_camera" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vw_ic_camera" android:layout_centerInParent="true" />
+    <View android:id="@id/shadow" android:background="@color/vw_ShadowItem" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/cbx" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/vw_selector_cbx" android:layout_alignParentRight="true" />
+    <RelativeLayout android:id="@id/folder_info" android:background="@drawable/hippo_directory_shade_bg" android:paddingLeft="@dimen/fugu_padding_5" android:paddingTop="@dimen/fugu_padding_10" android:paddingRight="@dimen/fugu_padding_5" android:paddingBottom="@dimen/fugu_margin_10" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/fugu_text_size_small" android:textColor="@color/hippo_white" android:id="@id/total_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="@dimen/fugu_text_size_small" android:textColor="@color/hippo_white" android:gravity="center_vertical" android:id="@id/directory_name" android:paddingRight="@dimen/fugu_padding_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:drawableLeft="@drawable/APKTOOL_DUMMY_27f" android:drawablePadding="@dimen/fugu_padding_5" android:layout_toLeftOf="@id/total_count" />
+    </RelativeLayout>
+</RelativeLayout>

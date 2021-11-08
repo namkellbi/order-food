@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlRoot" android:paddingTop="@dimen/fugu_dp_1" android:paddingBottom="@dimen/fugu_dp_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/fugu_margin_10" android:layout_marginEnd="@dimen/fugu_margin_10"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="end" android:orientation="vertical" android:id="@id/self_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="55.0dip" android:layout_marginRight="@dimen/fugu_margin_10" android:layout_marginStart="55.0dip" android:layout_marginEnd="@dimen/fugu_margin_10">
+        <LinearLayout android:orientation="vertical" android:id="@id/llMessage" android:background="@drawable/hippo_chat_bg_right_normal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.hippo.customLayout.ChatRelativeLayout android:id="@id/rlMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" app:child="@id/llTime" app:parent="@id/tvMsg">
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/fugu_primary_text_msg_from" android:textColorLink="@color/fugu_primary_text_msg_from" android:id="@id/tvMsg" android:paddingLeft="@dimen/fugu_dp_8" android:paddingTop="@dimen/fugu_margin_3" android:paddingRight="@dimen/fugu_margin_5" android:paddingBottom="@dimen/fugu_margin_2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/tvfont" />
+            </com.hippo.customLayout.ChatRelativeLayout>
+            <androidx.appcompat.widget.LinearLayoutCompat android:gravity="end" android:layout_gravity="end" android:orientation="horizontal" android:id="@id/llTime" android:visibility="visible" android:layout_width="190.0dip" android:layout_height="wrap_content" android:layout_alignBottom="@id/tvMsg">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/ivCallIcon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="-2.0dip" android:rotation="135.0" app:srcCompat="@drawable/APKTOOL_DUMMY_273" />
+                    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/fugu_secondary_text_msg_you" android:id="@id/tvDuration" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/fugu_margin_2" android:text="5 sec at" style="@style/tvfontTime" />
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/fugu_secondary_text_msg_you" android:id="@id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="@dimen/fugu_margin_2" android:layout_marginBottom="@dimen/fugu_margin_2" android:text="12:38 PM " style="@style/tvfontTime" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/fugu_margin_2" />
+            <TextView android:textColor="@color/fugu_theme_color_primary" android:gravity="center" android:id="@id/callAgain" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="@string/call_again" android:textAllCaps="false" style="@style/tvfont" />
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>
