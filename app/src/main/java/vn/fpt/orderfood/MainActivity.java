@@ -21,18 +21,20 @@ import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 import vn.fpt.orderfood.Helper.Session;
 import vn.fpt.orderfood.common.MessageConstants;
 import vn.fpt.orderfood.config.AppDatabase;
+import vn.fpt.orderfood.entity.Category;
 import vn.fpt.orderfood.fragment.CategoryFragment;
 import vn.fpt.orderfood.fragment.HomeFragment;
 
 public class MainActivity extends AppCompatActivity {
 
-//    AppDatabase db = Room.databaseBuilder(getApplicationContext(),
-//            AppDatabase.class, "foodOrder").allowMainThreadQueries().build();
+    AppDatabase db;
 
     static final String TAG = "MAIN ACTIVITY";
     @SuppressLint("StaticFieldLeak")
@@ -71,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
 
         activity = MainActivity.this;
         session = new Session(activity);
+        db = AppDatabase.getDbInstance(this.getApplicationContext());
 
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         from = getIntent().getStringExtra(MessageConstants.FROM);
@@ -82,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
         //favoriteFragment = new FavoriteFragment();
         //trackOrderFragment = new TrackOrderFragment();
         //drawerFragment = new DrawerFragment();
+        importData();
 
 
 
@@ -168,5 +172,28 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+    }
+    public void importData(){
+        List<Category> categories = new ArrayList<>();
+        Category category = new Category(1, "Rice", "/sdcard/Download/rice.png");
+        Category category2 = new Category(2, "Noodles", "/sdcard/Download/noodles.png");
+        Category category3 = new Category(3, "Drink", "/sdcard/Download/drink.png");
+        Category category4 = new Category(4, "Specialties", "/sdcard/Download/specialties.png");
+        Category category5 = new Category(5, "FastFood", "/sdcard/Download/fastfood.png");
+        Category category6 = new Category(6, "Snacks", "/sdcard/Download/snacks.png");
+        Category category7 = new Category(7, "Healthy", "/sdcard/Download/healthy.png");
+        Category category8 = new Category(8, "Bread", "/sdcard/Download/bread.png");
+
+        categories.add(category);
+        categories.add(category2);
+        categories.add(category3);
+        categories.add(category4);
+        categories.add(category5);
+        categories.add(category6);
+        categories.add(category7);
+        categories.add(category8);
+        if(db.categoryService().getAll().size() == 0) {
+            db.categoryService().insertAll(categories);
+        }
     }
 }

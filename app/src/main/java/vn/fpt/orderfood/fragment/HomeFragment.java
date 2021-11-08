@@ -142,7 +142,6 @@ public class HomeFragment extends Fragment {
         mMarkersLayout = root.findViewById(R.id.layout_markers);
         lytCategory = root.findViewById(R.id.lytCategory);
         lytSearchView = root.findViewById(R.id.lytSearchView);
-        lytSearchView = root.findViewById(R.id.lytSearchView);
         tvMoreFlashSale = root.findViewById(R.id.tvMoreFlashSale);
         tvMore = root.findViewById(R.id.tvMore);
         mShimmerViewContainer = root.findViewById(R.id.mShimmerViewContainer);
@@ -266,7 +265,7 @@ public class HomeFragment extends Fragment {
             mShimmerViewContainer.setVisibility(View.GONE);
             categoryRecyclerView.setVisibility(View.VISIBLE);
         } else {
-            tvNoData.setVisibility(View.VISIBLE);
+           // tvNoData.setVisibility(View.VISIBLE);
             mShimmerViewContainer.stopShimmer();
             mShimmerViewContainer.setVisibility(View.GONE);
             categoryRecyclerView.setVisibility(View.GONE);
@@ -306,13 +305,5 @@ public class HomeFragment extends Fragment {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-    private void addCate(){
-        Category category = new Category();
-        category.setCategoryId(1);
-        category.setCategoryName("abcc");
-        category.setCategoryImage("abc");
-        CategoryService categoryService = db.categoryService();
-        categoryService.insertAll(category);
     }
 }
