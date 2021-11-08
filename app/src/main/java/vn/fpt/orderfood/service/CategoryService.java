@@ -14,5 +14,5 @@ public interface CategoryService {
     List<Category> getAll();
 
     @Insert
-    void insertAll(Category category);
+    void insertAll(List<Category> categories);
 }

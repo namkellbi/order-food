@@ -1,6 +1,9 @@
 package vn.fpt.orderfood.config;
 
+import android.content.Context;
+
 import androidx.room.Database;
+import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
 import vn.fpt.orderfood.entity.Bill;
@@ -41,5 +44,15 @@ public abstract class AppDatabase extends RoomDatabase {
     public abstract StatisticService statisticService();
 
     public abstract TableService tableService();
+
+    private static AppDatabase INSTANCE;
+
+    public static AppDatabase getDbInstance(Context context){
+        if(INSTANCE == null){
+            INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
+                    vn.fpt.orderfood.config.AppDatabase.class, "foodOrder").allowMainThreadQueries().build();
+        }
+        return INSTANCE;
+    }
 
 }

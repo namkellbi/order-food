@@ -37,7 +37,7 @@
         android:gravity="center"
         android:visibility="gone">
 
-        <wrteam.ecart.shop.helper.album.widget.ColorProgressBar
+        <vn.fpt.orderfood.helper.album.widget.ColorProgressBar
             android:id="@+id/progress_bar"
             style="@style/Album.Progress.Loading" />
 

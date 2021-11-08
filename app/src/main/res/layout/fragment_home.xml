@@ -53,12 +53,12 @@
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/offerView"
-                    android:overScrollMode="never"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp" />
+                    android:layout_marginBottom="5dp"
+                    android:overScrollMode="never" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -186,7 +186,7 @@
                         android:layout_marginStart="@dimen/_1sdp"
                         android:layout_marginEnd="@dimen/_1sdp"
                         app:tabRippleColor="@android:color/transparent"
-                    />
+                        />
 
                     <androidx.viewpager.widget.ViewPager
                         android:id="@+id/viewPager"
