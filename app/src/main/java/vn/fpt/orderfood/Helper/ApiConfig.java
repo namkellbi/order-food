@@ -20,11 +20,17 @@ import androidx.core.content.ContextCompat;
 import com.google.android.material.slider.Slider;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import vn.fpt.orderfood.R;
+import vn.fpt.orderfood.config.AppDatabase;
+import vn.fpt.orderfood.entity.Food;
+import vn.fpt.orderfood.service.FoodService;
 
 public class ApiConfig {
     static boolean isDialogOpen = false;
+
+    public static List<Food> foods;
     public static void addMarkers(int currentPage, ArrayList<Slider> imageList, LinearLayout mMarkersLayout, Context context) {
 
         if (context != null) {
@@ -85,4 +91,16 @@ public class ApiConfig {
         return check;
     }
 
+       public List<Food> GetProductById(AppDatabase db) {
+           foods = new ArrayList<>();
+           FoodService foodService = db.foodService();
+           List<Food> foodStatus = foodService.loadStatus();
+           if (foodStatus.size() != 0) {
+               for (Food food : foodStatus) {
+                   foods.add(food);
+               }
+
+           }
+           return foods;
+       }
 }
