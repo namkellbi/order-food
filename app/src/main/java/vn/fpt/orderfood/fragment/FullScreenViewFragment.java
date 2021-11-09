@@ -26,7 +26,7 @@ import vn.fpt.orderfood.entity.Slider;
 public class FullScreenViewFragment extends Fragment {
     View root;
     int pos;
-    ArrayList<Slider> imageList;
+    String imageList;
     LinearLayout mMarkersLayout;
     ViewPager viewPager;
     Activity activity;
@@ -45,8 +45,8 @@ public class FullScreenViewFragment extends Fragment {
 
         setHasOptionsMenu(true);
 
-        imageList = new ArrayList<>();
-        imageList = ProductDetailFragment.sliderArrayList;
+        //imageList = new ArrayList<>();
+        imageList = ProductDetailFragment.sliderArrayList.get(0);
         assert getArguments() != null;
         pos = getArguments().getInt("pos", 0);
 

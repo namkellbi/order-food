@@ -3,6 +3,8 @@ package vn.fpt.orderfood.fragment;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 
 import androidx.core.content.ContextCompat;
@@ -28,6 +30,7 @@ import android.widget.TextView;
 import com.airbnb.lottie.LottieAnimationView;
 import com.facebook.shimmer.ShimmerFrameLayout;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -50,7 +53,7 @@ import vn.fpt.orderfood.service.FoodService;
  * create an instance of this fragment.
  */
 public class ProductDetailFragment extends Fragment {
-    static ArrayList<Slider> sliderArrayList;
+    static ArrayList<String> sliderArrayList;
     TextView showDiscount, tvMfg, tvMadeIn, tvProductName, tvQuantity, tvPrice, tvOriginalPrice, tvMeasurement, tvStatus, tvTitleMadeIn, tvTitleMfg, tvTimer, tvTimerTitle;
     WebView webDescription;
     ViewPager viewPager;
@@ -338,7 +341,8 @@ public class ProductDetailFragment extends Fragment {
     @SuppressLint({"SetTextI18n", "UseCompatLoadingForDrawables"})
     void SetProductDetails(final Food product) {
         tvProductName.setText(product.getFoodName());
-
+        String price = String.valueOf(product.getFoodPrice());
+        tvPrice.setText(price);
         ratingProduct_ = root.findViewById(R.id.ratingProduct_);
         ratingProduct = root.findViewById(R.id.ratingProduct);
         tvRatingProductCount = root.findViewById(R.id.tvRatingProductCount);
@@ -346,12 +350,12 @@ public class ProductDetailFragment extends Fragment {
         tvReviewDetail = root.findViewById(R.id.tvReviewDetail);
         tvMoreReview = root.findViewById(R.id.tvMoreReview);
         List<String> arrayList = Arrays.asList(product.getFoodImage());
-        sliderArrayList.add(new Slider(product.getFoodImage()));
+        sliderArrayList.add(product.getFoodImage());
 
-       // viewPager.setAdapter(new SliderAdapter(sliderArrayList, activity, R.layout.lyt_detail_slider, "detail"));
+        viewPager.setAdapter(new SliderAdapter(product.getFoodImage(), activity, R.layout.lyt_detail_slider, "detail"));
 
         for (int i = 0; i < arrayList.size(); i++) {
-            sliderArrayList.add(new Slider(arrayList.get(i)));
+            sliderArrayList.add(arrayList.get(i));
         }
 
 
