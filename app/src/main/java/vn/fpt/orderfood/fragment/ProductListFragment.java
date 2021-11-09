@@ -56,7 +56,8 @@ public class ProductListFragment extends Fragment {
     NestedScrollView nestedScrollView;
     Activity activity;
     int offset = 0, offsetFlashSaleNames = 0;
-    String id, filterBy, from;
+    String filterBy, from;
+    int id;
     RecyclerView recyclerView;
     SwipeRefreshLayout swipeLayout;
     int filterIndex;
@@ -93,8 +94,7 @@ public class ProductListFragment extends Fragment {
 
         assert getArguments() != null;
         from = getArguments().getString(MessageConstants.FROM);
-        id = getArguments().getString(MessageConstants.ID);
-
+        id = getArguments().getInt(MessageConstants.ID);
         setHasOptionsMenu(true);
 
         if (session.getBoolean("grid")) {

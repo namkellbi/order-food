@@ -41,7 +41,9 @@ import vn.fpt.orderfood.adapter.SectionAdapter;
 import vn.fpt.orderfood.common.MessageConstants;
 import vn.fpt.orderfood.config.AppDatabase;
 import vn.fpt.orderfood.entity.Category;
+import vn.fpt.orderfood.entity.Food;
 import vn.fpt.orderfood.service.CategoryService;
+import vn.fpt.orderfood.service.FoodService;
 import vn.fpt.orderfood.service.UserService;
 
 /**
@@ -59,7 +61,8 @@ public class HomeFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    public static ArrayList<Category> categoryArrayList, sectionList;
+    public static ArrayList<Category> categoryArrayList;
+    public static ArrayList<Food> foods,sectionList;
     public Session session;
     ArrayList<Slider> sliderArrayList;
     Activity activity;
@@ -214,6 +217,7 @@ public class HomeFragment extends Fragment {
         });
 
         categoryArrayList = new ArrayList<>();
+        foods = new ArrayList<>();
 
         swipeLayout.setColorSchemeColors(ContextCompat.getColor(activity,R.color.colorPrimary));
 
@@ -248,6 +252,7 @@ public class HomeFragment extends Fragment {
 //            params.put(MessageConstants.USER_ID, session.getData(MessageConstants.ID));
 //        }
         GetCategory(db);
+        GetProductById(db);
 
     }
 
@@ -269,6 +274,24 @@ public class HomeFragment extends Fragment {
             mShimmerViewContainer.stopShimmer();
             mShimmerViewContainer.setVisibility(View.GONE);
             categoryRecyclerView.setVisibility(View.GONE);
+        }
+    }
+
+    void GetProductById(AppDatabase db) {
+        sectionList = new ArrayList<>();
+        FoodService foodService = db.foodService();
+        List<Food> foodStatus = foodService.loadStatus();
+        if (foodStatus.size() != 0) {
+            for (Food food : foodStatus) {
+                Food section = new Food();
+                section.setFoodId(food.getFoodId());
+                section.setFoodImage(food.getFoodImage());
+                section.setFoodName(food.getFoodName());
+                sectionList.add(food);
+            }
+            sectionView.setVisibility(View.VISIBLE);
+            SectionAdapter sectionAdapter = new SectionAdapter(activity, getActivity(), sectionList);
+            sectionView.setAdapter(sectionAdapter);
         }
     }
 
